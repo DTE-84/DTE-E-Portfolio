@@ -41,10 +41,10 @@ const Hero: React.FC = () => {
 						style={{
 							color: "var(--theme-offset)",
 							textShadow: "0 0 10px rgba(var(--theme-offset-rgb), 0.3)",
-						}}>
-						<span>{"//"}</span>
-					</span>{" "}
+						}}></span>
+						<br>					
 					Engineering Performance through Data Integrity
+					</br>
 				</p>
 
 				<div className='mt-20 flex flex-col items-center gap-12 w-full'>
@@ -61,81 +61,6 @@ const Hero: React.FC = () => {
 							style={{ width: "220px", height: "52px" }}>
 							PCSP Case Study
 						</Link>
-					</div>
-
-					<div className='w-full flex flex-col items-center gap-8 max-w-[1400px] mx-auto px-4'>
-						<div className='flex items-center justify-center gap-4 md:gap-8 py-4'>
-							<div className='h-[1px] w-8 md:w-12 bg-[var(--theme-offset)] shadow-[0_0_10px_var(--theme-offset)]'></div>
-							<h4 className='text-[12px] md:text-[14px] font-bold text-accent uppercase tracking-[4px] md:tracking-[6px] whitespace-nowrap font-space'>
-								Tools of the Trade
-							</h4>
-							<div className='h-[1px] w-8 md:w-12 bg-[var(--theme-offset)] shadow-[0_0_10px_var(--theme-offset)]'></div>
-						</div>
-
-						<div className='flex flex-col md:flex-row gap-8 md:gap-12 items-center justify-center w-full'>
-							{/* Systems & Core - Primary Blue */}
-							<div className='flex flex-col items-center gap-4'>
-								<span className='text-[10px] font-mono uppercase tracking-[3px] text-white/40'>
-									Systems & Core
-								</span>
-								<div className='flex flex-wrap justify-center gap-3 md:gap-4 max-w-[350px]'>
-									{[
-										"React",
-										"TypeScript",
-										"Python",
-										"Java",
-										"C#",
-										"Node.js",
-									].map((tech) => (
-										<div
-											key={tech}
-											className='flex items-center justify-center w-[100px] h-[38px] bg-[var(--theme-accent)]/5 border border-[var(--theme-accent)]/20 text-[var(--theme-accent)] text-[9px] font-bold uppercase tracking-widest font-space hover:bg-white/10 hover:border-[var(--theme-accent)] hover:backdrop-blur-md transition-all duration-300 cursor-default'>
-											{tech}
-										</div>
-									))}
-								</div>
-							</div>
-
-							<div className='w-12 h-[1px] bg-white/10 md:w-[1px] md:h-12'></div>
-
-							{/* Cloud & Database - Accent Green */}
-							<div className='flex flex-col items-center gap-4'>
-								<span className='text-[10px] font-mono uppercase tracking-[3px] text-white/40'>
-									Cloud & Database
-								</span>
-								<div className='flex flex-wrap justify-center gap-3 md:gap-4 max-w-[350px]'>
-									{["AWS", "Azure", "Docker", "SQL", "Git", ".NET"].map(
-										(tech) => (
-											<div
-												key={tech}
-												className='flex items-center justify-center w-[100px] h-[38px] bg-accent/5 border border-accent/20 text-accent text-[9px] font-bold uppercase tracking-widest font-space hover:bg-white/10 hover:border-accent hover:backdrop-blur-md transition-all duration-300 cursor-default'>
-												{tech}
-											</div>
-										),
-									)}
-								</div>
-							</div>
-
-							<div className='w-12 h-[1px] bg-white/10 md:w-[1px] md:h-12'></div>
-
-							{/* UI/UX & Method - Offset Grey */}
-							<div className='flex flex-col items-center gap-4'>
-								<span className='text-[10px] font-mono uppercase tracking-[3px] text-white/40'>
-									UI/UX & Method
-								</span>
-								<div className='flex flex-wrap justify-center gap-3 md:gap-4 max-w-[350px]'>
-									{["Tailwind", "GSAP", "Figma", "OOD", "SDLC", "Agile"].map(
-										(tech) => (
-											<div
-												key={tech}
-												className='flex items-center justify-center w-[100px] h-[38px] bg-[var(--theme-offset)]/5 border border-[var(--theme-offset)]/20 text-[var(--theme-offset)] text-[9px] font-bold uppercase tracking-widest font-space hover:bg-white/10 hover:border-[var(--theme-offset)] hover:backdrop-blur-md transition-all duration-300 cursor-default'>
-												{tech}
-											</div>
-										),
-									)}
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>

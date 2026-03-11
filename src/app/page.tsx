@@ -84,7 +84,9 @@ export default function Home() {
         }, []);
 
         return (
-                <div className="min-h-screen relative overflow-hidden bg-black selection:bg-accent/30 font-space selection:text-white">
+                <div className="min-h-screen relative overflow-hidden selection:bg-accent/30 font-space selection:text-white">
+                        {/* Background Layer */}
+                        <div className="fixed inset-0 bg-black -z-20" />
                         <BgAnimation />
                         <ScrollNav />
 

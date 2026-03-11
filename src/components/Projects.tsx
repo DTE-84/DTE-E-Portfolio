@@ -182,6 +182,19 @@ const Projects: React.FC = () => {
                         video: "/DTE-E-Portfolio/assets/CarSales.mp4",
                         link: "https://dte-84.github.io/CarSalesInv/",
                         featured: true,
+                },
+                {
+                        id: "TONYS_LLC",
+                        title: "Tonys Landscaping LLC",
+                        category: "Commercial Service Logic",
+                        year: "2024",
+                        description:
+                                "A service-oriented digital presence featuring custom interactive modules for performance visualization and client acquisition.",
+                        tags: ["Commercial UI", "Visual Engine", "GSAP"],
+                        image: "/DTE-E-Portfolio/assets/tonybna.png",
+                        video: "/DTE-E-Portfolio/assets/Tonysllc.mp4",
+                        link: "https://tonyslandscapingllc.com",
+                        featured: true,
                 }
         ];
 
@@ -272,69 +285,54 @@ const Projects: React.FC = () => {
         return (
                 <section id='projects' className='relative py-32 bg-transparent'>
                         <div className='container-main'>
-                                {/* 01 // FEATURED CASE STUDY */}
+                                {/* 02 // CASE STUDY */}
                                 <div className='mb-60'>
-                                        <div className='flex items-center gap-4 mb-16'>
-                                                <div className='w-12 h-[1px] bg-accent'></div>
-                                                <span className='font-orbitron text-accent tracking-[0.3em] text-sm font-bold'>
-                                                        01 // FEATURED INTEL
-                                                </span>
+                                        <div className='flex items-center gap-6 mb-16'>
+                                                <h2 className='text-2xl md:text-3xl font-bold text-white tracking-widest uppercase'>
+                                                        <span style={{ color: "var(--theme-accent)", opacity: 0.8 }}>
+                                                                02 //
+                                                        </span>{" "}
+                                                        Case Study
+                                                </h2>
+                                                <div className='h-[1px] flex-grow bg-[var(--theme-accent)]/40'></div>
                                         </div>
                                         <ProjectRow project={featuredCaseStudy} index={0} />
                                 </div>
 
-                                {/* 02 // DEPLOYMENTS */}
-                                <div className='flex flex-col md:flex-row justify-between items-end mb-24'>
-                                        <div>
-                                                <div className='flex items-center gap-4 mb-4'>
-                                                        <div className='w-12 h-[1px] bg-[var(--theme-accent)]'></div>
-                                                        <span className='font-orbitron text-[var(--theme-accent)] tracking-[0.3em] text-sm font-bold'>
-                                                                02 // DEPLOYMENTS
-                                                        </span>
-                                                </div>
-                                                <h2 className='text-5xl md:text-7xl font-black text-white uppercase tracking-tighter'>
-                                                        Active <br />
-                                                        <span className='text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent/40'>
-                                                                Production
-                                                        </span>
+                                {/* 03 // APPLICATIONS */}
+                                <div className='mb-60'>
+                                        <div className='flex items-center gap-6 mb-16'>
+                                                <h2 className='text-2xl md:text-3xl font-bold text-white tracking-widest uppercase'>
+                                                        <span style={{ color: "var(--theme-accent)", opacity: 0.8 }}>
+                                                                03 //
+                                                        </span>{" "}
+                                                        Applications
                                                 </h2>
+                                                <div className='h-[1px] flex-grow bg-[var(--theme-accent)]/40'></div>
                                         </div>
-                                        <div className='hidden md:block'>
-                                                <div className='flex items-center gap-2 text-[var(--theme-text-dim)] font-mono text-xs'>
-                                                        <div className='w-2 h-2 rounded-full bg-[var(--theme-accent)] animate-pulse'></div>
-                                                        SYSTEMS ONLINE
-                                                </div>
+                                        <div className='flex flex-col gap-40'>
+                                                {deployments.map((project, index) => (
+                                                        <ProjectRow key={project.id} project={project} index={index + 1} />
+                                                ))}
                                         </div>
                                 </div>
 
-                                <div className='flex flex-col gap-40 mb-60'>
-                                        {deployments.map((project, index) => (
-                                                <ProjectRow key={project.id} project={project} index={index + 1} />
-                                        ))}
-                                </div>
-
-                                {/* 03 // ARCHIVE */}
-                                <div className='flex flex-col md:flex-row justify-between items-end mb-24'>
-                                        <div>
-                                                <div className='flex items-center gap-4 mb-4'>
-                                                        <div className='w-12 h-[1px] bg-[var(--theme-accent)]/40'></div>
-                                                        <span className='font-orbitron text-[var(--theme-accent)]/60 tracking-[0.3em] text-sm font-bold'>
-                                                                03 // ARCHIVE
-                                                        </span>
-                                                </div>
-                                                <h2 className='text-5xl md:text-7xl font-black text-white uppercase tracking-tighter'>
-                                                        Legacy <br />
-                                                        <span className='text-transparent bg-clip-text bg-gradient-to-r from-accent/60 to-accent/20'>
-                                                                Solutions
-                                                        </span>
+                                {/* 04 // ARCHIVE */}
+                                <div>
+                                        <div className='flex items-center gap-6 mb-16'>
+                                                <h2 className='text-2xl md:text-3xl font-bold text-white tracking-widest uppercase'>
+                                                        <span style={{ color: "var(--theme-accent)", opacity: 0.8 }}>
+                                                                04 //
+                                                        </span>{" "}
+                                                        Archive
                                                 </h2>
+                                                <div className='h-[1px] flex-grow bg-[var(--theme-accent)]/40'></div>
                                         </div>
-                                </div>
-
-                                <div className='flex flex-col gap-40'>
-                                        {archives.map((project, index) => (
-                                                <ProjectRow key={project.id} project={project} index={index + deployments.length + 1} />
-                                        ))}
+                                        <div className='flex flex-col gap-40'>
+                                                {archives.map((project, index) => (
+                                                        <ProjectRow key={project.id} project={project} index={index + deployments.length + 1} />
+                                                ))}
+                                        </div>
                                 </div>
                         </div>
                 </section>
