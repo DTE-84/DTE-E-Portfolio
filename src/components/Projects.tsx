@@ -146,7 +146,7 @@ const Projects: React.FC = () => {
                 },
                 {
                         id: "SANTI_CARS",
-                        title: "Santi Cars",
+                        title: "Santis Cars",
                         category: "Commercial Inventory System",
                         year: "2024",
                         description:
