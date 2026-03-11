@@ -60,64 +60,54 @@ export default function VersionSelector({ forcedOpen = false, onClose, isOpen = 
       </div>
 
       <div className="flex flex-col lg:flex-row gap-6 w-full max-w-6xl">
-
-        {/* PERSONAL PORTFOLIO - V2.2 */}
+        {/* PERSONAL PORTFOLIO - TEAL (LEFT) */}
         <Link
           href="/"
           onClick={handleSelect}
-          className="group flex-1 p-10 bg-zinc-900/50 border border-white/20 hover:border-white transition-all duration-500 relative overflow-hidden rounded-3xl"
+          className="group flex-1 p-10 bg-zinc-900/50 border border-[#00ffcc]/20 hover:border-[#00ffcc] transition-all duration-500 relative overflow-hidden rounded-3xl"
         >
           <div className="absolute top-6 left-6 text-[10px] font-bold uppercase tracking-widest text-zinc-600">Protocol V2.2</div>
-          <div className="mt-16">
-            <h2 className="text-4xl font-black tracking-tighter text-white mb-2 uppercase">
-              Portfolio<span>.</span>
+          <div className="mt-16 text-center">
+            <h2 className="text-4xl font-black tracking-tighter text-white mb-2 uppercase group-hover:text-[#00ffcc] transition-colors">
+              Portfolio<span className="text-[#00ffcc]">.</span>
             </h2>
             <p className="text-zinc-500 text-sm font-medium leading-relaxed">
               Immersive personal workspace showcasing full-stack engineering and public relations background.
             </p>
           </div>
-          <div className="absolute bottom-8 right-8 text-white translate-x-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-4xl">
-            &rarr;
-          </div>
         </Link>
 
-        {/* BUSINESS HUB - THE NEW TARGET */}
+        {/* BUSINESS HUB - WHITE (CENTER) */}
         <Link
           href="https://dte-84.github.io/DTE-Solutions-Hub/"
           onClick={handleSelect}
-          className="group flex-1 p-10 bg-zinc-900 border-2 border-accent/20 hover:border-accent transition-all duration-500 relative overflow-hidden rounded-[40px] shadow-2xl shadow-accent/5"
+          className="group flex-1 p-10 bg-zinc-900 border-2 border-white/10 hover:border-white transition-all duration-500 relative overflow-hidden rounded-[40px] shadow-2xl"
         >
-          <div className="absolute top-6 left-6 text-[10px] font-black uppercase tracking-widest text-accent animate-pulse">Live Solutions</div>
-          <div className="mt-16">
+          <div className="absolute top-6 left-6 text-[10px] font-black uppercase tracking-widest text-white/40 animate-pulse">Live Solutions</div>
+          <div className="mt-16 text-center">
             <h2 className="text-4xl font-black tracking-tighter text-white mb-2 uppercase">
-              Solutions Hub<span className="text-accent">.</span>
+              Solutions Hub<span>.</span>
             </h2>
             <p className="text-zinc-400 text-sm font-medium leading-relaxed">
               Sophisticated applications solving real-world problems. Explore **PULSE** and **FLUFF** engineering environments.
             </p>
           </div>
-          <div className="absolute bottom-8 right-8 text-accent translate-x-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-4xl">
-            &rarr;
-          </div>
         </Link>
 
-        {/* MINIMALIST PORTFOLIO - V3 */}
+        {/* MINIMALIST PORTFOLIO - BLUE (RIGHT) */}
         <Link
           href="/v3"
           onClick={handleSelect}
-          className="group flex-1 p-10 bg-zinc-900/50 border border-green-500/20 hover:border-green-500 transition-all duration-500 relative overflow-hidden rounded-3xl"
+          className="group flex-1 p-10 bg-zinc-900/50 border border-[#00ffff]/20 hover:border-[#00ffff] transition-all duration-500 relative overflow-hidden rounded-3xl"
         >
           <div className="absolute top-6 left-6 text-[10px] font-bold uppercase tracking-widest text-zinc-600">Protocol V3</div>
-          <div className="mt-16">
-            <h2 className="text-4xl font-black tracking-tighter text-white mb-2 uppercase text-white/40 group-hover:text-green-500 transition-colors">
-              Minimal<span className="text-green-500">.</span>
+          <div className="mt-16 text-center">
+            <h2 className="text-4xl font-black tracking-tighter text-white mb-2 uppercase group-hover:text-[#00ffff] transition-colors">
+              Minimal<span className="text-[#00ffff]">.</span>
             </h2>
             <p className="text-zinc-500 text-sm font-medium leading-relaxed">
               Refined, content-focused architecture for rapid behavioral analysis review.
             </p>
-          </div>
-          <div className="absolute bottom-8 right-8 text-green-500 translate-x-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-4xl">
-            &rarr;
           </div>
         </Link>
       </div>
