@@ -229,7 +229,7 @@ const FeaturedCaseStudy = () => {
 
 					<div className='flex flex-col sm:flex-row gap-6'>
 						<a
-							href='https://dte-solutions-llc.github.io/PCSP-Case-Study/'
+							href='https://dte-84.github.io/DTE-E-Portfolio/case-study-pcsp/'
 							target='_blank'
 							rel='noopener noreferrer'
 							className='px-8 py-4 bg-accent text-black font-black uppercase tracking-widest text-xs flex items-center justify-center gap-2 hover:bg-white transition-all hover:scale-105'>
@@ -331,7 +331,7 @@ const Work = () => {
 			tags: ["React", "Interactive", "Game Design"],
 			image: "/assets/siknighthome.png",
 			video: "/assets/siknight.mp4",
-			link: "https://dte-solutions-llc.github.io/SiKnight/",
+			link: "https://dte-84.github.io/SiKnight/",
 		},
 		{
 			id: "KEANO",
@@ -367,7 +367,7 @@ const Work = () => {
 			tags: ["React", "Hooks", "API"],
 			image: "/assets/library.png",
 			video: "/assets/estore.mp4",
-			link: "https://dte-solutions-llc.github.io/E-Commerce-Books/",
+			link: "https://dte-84.github.io/E-Commerce-Books/",
 		},
 		{
 			id: "CARSALES",
@@ -379,7 +379,7 @@ const Work = () => {
 			tags: ["React", "REST API", "UX Design"],
 			image: "/assets/santishowroom.png",
 			video: "/assets/CarSales.mp4",
-			link: "https://dte-solutions-llc.github.io/CarSalesmanInventory/",
+			link: "https://dte-84.github.io/CarSalesInv/",
 		},
 		{
 			id: "CRYPTOLIVE",
@@ -565,7 +565,7 @@ const Footer = () => {
 				</a>
 				<div className='flex justify-center gap-8 mt-16'>
 					<a
-						href='https://github.com/DTE-Solutions-LLC'
+						href='https://github.com/dte-84'
 						target='_blank'
 						className='text-white/50 hover:text-white transition-colors'>
 						<Icon icon='mdi:gitlab' width='32' height='32' />

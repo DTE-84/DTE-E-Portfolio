@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
 			id='home'
 			className='hero min-h-screen flex items-center justify-center text-center pt-[120px] md:pt-[100px] bg-transparent'>
 			<div className='container-main hero-content'>
-				<h1 className='text-white font-bold uppercase leading-none mb-4 text-[clamp(2.2rem,10vw,6rem)] tracking-[clamp(4px,2vw,8px)] relative inline-block z-10 w-full flicker-animation'>
+				<h1 className='font-bold uppercase leading-none mb-4 text-[clamp(2.2rem,10vw,6rem)] tracking-[clamp(4px,2vw,8px)] relative inline-block z-10 w-full flicker-animation bg-gradient-to-r from-white via-accent to-white/80 bg-clip-text text-transparent'>
 					{words.map((word, wordIndex) => (
 						<span
 							key={wordIndex}

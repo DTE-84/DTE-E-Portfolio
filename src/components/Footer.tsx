@@ -193,7 +193,7 @@ const Footer: React.FC<FooterProps> = ({ onContactClick, onGatewayClick }) => {
 					</div>
 					<div className='flex gap-8 items-center'>
 						<a
-							href='https://github.com/dte-solutions-llc'
+							href='https://github.com/dte-84'
 							target='_blank'
 							className='text-white/40 hover:text-accent transition-colors text-xl'>
 							<Icon icon='mdi:github' />

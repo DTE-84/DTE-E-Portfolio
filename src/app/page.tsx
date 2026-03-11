@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useEffect, useState, useRef } from "react";
 import BgAnimation from "../components/BgAnimation";
@@ -58,6 +58,12 @@ export default function Home() {
                                                                         </a>
                                                                 </li>
                                                         ))}
+                                                        <li>
+                                                                <a href="/" className="nav-link text-[10px] font-black uppercase tracking-[3px] text-accent/60 hover:text-accent transition-all duration-300">v2.2</a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="/v3" className="nav-link text-[10px] font-black uppercase tracking-[3px] text-violet-400 hover:text-violet-300 transition-all duration-300">v3</a>
+                                                        </li>
                                                 </ul>
                                         </div>
 

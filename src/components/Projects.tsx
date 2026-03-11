@@ -82,7 +82,7 @@ const Projects: React.FC = () => {
                         tags: ["Next.js", "Compliance Logic", "HIPAA"],
                         image: "/assets/pcsp1.png",
                         video: "/assets/CaseStudy-PCSP-1771755500766.mp4",
-                        link: "https://dte-solutions-llc.github.io/PCSP-Case-Study/",
+                        link: "https://dte-84.github.io/DTE-E-Portfolio/case-study-pcsp/",
                         caseStudy: "/case-study-pcsp",
                         featured: true,
                 },
@@ -164,7 +164,7 @@ const Projects: React.FC = () => {
                         tags: ["Vanilla JS", "CSS3", "Media"],
                         image: "/assets/siknighthome.png",
                         video: "/assets/SiKnight-1771896141464.mp4",
-                        link: "https://dte-solutions-llc.github.io/SiKnight/",
+                        link: "https://dte-84.github.io/SiKnight/",
                         featured: true,
                 },
                 {
@@ -177,7 +177,7 @@ const Projects: React.FC = () => {
                         tags: ["Inventory Logic", "Frontend Eng", "UI"],
                         image: "/assets/santicars.png",
                         video: "/assets/CarSales.mp4",
-                        link: "https://dte-solutions-llc.github.io/CarSalesmanInventory/",
+                        link: "https://dte-84.github.io/CarSalesInv/",
                         featured: true,
                 }
         ];
