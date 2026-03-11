@@ -76,11 +76,11 @@ export default function Home() {
         const toggleTheme = () => {
                 const newTheme = theme === "blue" ? "yellow" : "blue";
                 setTheme(newTheme);
-                document.documentElement.setAttribute("data-theme", newTheme);
+                document.documentElement.setAttribute("data-theme", newTheme === "blue" ? "default" : "yellow");
         };
 
         useEffect(() => {
-                document.documentElement.setAttribute("data-theme", "blue");
+                document.documentElement.setAttribute("data-theme", "default");
         }, []);
 
         return (
@@ -118,6 +118,15 @@ export default function Home() {
                                                         </li>
                                                         <li>
                                                                 <Link href="/v3" className="nav-link text-[10px] font-black uppercase tracking-[3px] text-violet-400 hover:text-violet-300 transition-all duration-300">v3</Link>
+                                                        </li>
+                                                        <li>
+                                                                <a
+                                                                        href="/DTE-E-Portfolio/Drew_T_Ernst_Resume.pdf"
+                                                                        target="_blank"
+                                                                        className="nav-link text-[10px] font-black uppercase tracking-[3px] text-accent/80 hover:text-accent transition-all duration-300"
+                                                                >
+                                                                        Resume
+                                                                </a>
                                                         </li>
                                                 </ul>
                                         </div>

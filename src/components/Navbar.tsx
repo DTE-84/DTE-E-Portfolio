@@ -35,12 +35,14 @@ export default function Navbar() {
                         <nav
                                 className={`fixed top-0 left-0 w-full z-[1000] transition-all duration-500 ${scrolled || isOpen ? "bg-black/90 backdrop-blur-md py-4" : "bg-transparent py-8"}`}>
                                 <div className='max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center'>
-                                        <Link
-                                                href='/'
-                                                className='text-2xl font-black tracking-tighter text-white group z-[1001]'
-                                                onClick={closeMenu}>
-                                                <Image src="/DTE-E-Portfolio/assets/DREWMAINLOGO.png" alt="DTE" width={100} height={32} className="h-8 w-auto object-contain group-hover:scale-105 transition-transform" />
-                                        </Link>
+                                        <div className='tech-logo-static flex items-center gap-3 cursor-default'>
+                                                <div className="w-8 h-8 bg-accent/10 border border-accent flex items-center justify-center [clip-path:polygon(25%_0%,100%_0%,75%_100%,0%_100%)]">
+                                                        <span className="text-white font-black text-xs tracking-tighter">D</span>
+                                                </div>
+                                                <span className='text-xl font-black tracking-tighter text-white uppercase'>
+                                                        DTE <span className="text-accent/60">Solutions</span>
+                                                </span>
+                                        </div>
 
                                         <div className='hidden md:flex gap-12 items-center'>
                                                 {navLinks.map(({ href, label }) => (

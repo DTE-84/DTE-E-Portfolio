@@ -90,7 +90,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
         )}
 
         <div
-          className={`modal__half modal__about w-1/2 p-[35px] flex flex-col justify-center bg-accent text-black hidden md:flex transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] ${isAnimating ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"}`}
+          className={`modal__half modal__about w-1/2 p-[35px] flex flex-col justify-center bg-accent text-black hidden md:flex transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] ${isAnimating ? "translate-x-0 opacity-100 scale-100" : "-translate-x-[150%] opacity-0 scale-90"}`}
         >
           <h3 className="modal__title text-2xl font-bold mb-4 uppercase tracking-widest font-orbitron">
             Drew T Ernst
@@ -106,7 +106,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
         </div>
 
         <div
-          className={`modal__half modal__contact w-full md:w-1/2 p-[35px] flex flex-col justify-center bg-[#1e293b] text-[#d7e3fc] relative transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] ${isAnimating ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}`}
+          className={`modal__half modal__contact w-full md:w-1/2 p-[35px] flex flex-col justify-center bg-[#1e293b] text-[#d7e3fc] relative transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] ${isAnimating ? "translate-x-0 opacity-100 scale-100" : "translate-x-[150%] opacity-0 scale-90"}`}
         >
           <button
             onClick={onClose}
