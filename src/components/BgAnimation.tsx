@@ -14,7 +14,7 @@ type Particle = {
 const BgAnimation: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const currentTheme = useRef<"yellow" | "default">("default");
-  const animationFrameId = useRef<number>();
+  const animationFrameId = useRef<number | undefined>(undefined);
 
   // This effect runs only once to set up the theme observer
   useEffect(() => {

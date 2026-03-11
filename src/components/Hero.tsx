@@ -2,7 +2,6 @@
 
 import React from "react";
 import Link from "next/link";
-import { Icon } from "@iconify/react";
 
 const Hero: React.FC = () => {
 	const name = "Drew T Ernst";
@@ -43,7 +42,7 @@ const Hero: React.FC = () => {
 							color: "var(--theme-offset)",
 							textShadow: "0 0 10px rgba(var(--theme-offset-rgb), 0.3)",
 						}}>
-						<span>//</span>
+						<span>{"//"}</span>
 					</span>{" "}
 					Engineering Performance through Data Integrity
 				</p>

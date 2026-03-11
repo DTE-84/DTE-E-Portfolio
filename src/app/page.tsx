@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
 import BgAnimation from "../components/BgAnimation";
 import Hero from "../components/Hero";
 import About from "../components/About";
@@ -8,7 +9,6 @@ import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 import VersionSelector from "../components/VersionSelector";
 import ShatterPortal from "../components/ShatterPortal";
-import { Icon } from "@iconify/react";
 
 export default function Home() {
         const [theme, setTheme] = useState("blue");
@@ -59,10 +59,10 @@ export default function Home() {
                                                                 </li>
                                                         ))}
                                                         <li>
-                                                                <a href="/" className="nav-link text-[10px] font-black uppercase tracking-[3px] text-accent/60 hover:text-accent transition-all duration-300">v2.2</a>
+                                                                <Link href="/" className="nav-link text-[10px] font-black uppercase tracking-[3px] text-accent/60 hover:text-accent transition-all duration-300">v2.2</Link>
                                                         </li>
                                                         <li>
-                                                                <a href="/v3" className="nav-link text-[10px] font-black uppercase tracking-[3px] text-violet-400 hover:text-violet-300 transition-all duration-300">v3</a>
+                                                                <Link href="/v3" className="nav-link text-[10px] font-black uppercase tracking-[3px] text-violet-400 hover:text-violet-300 transition-all duration-300">v3</Link>
                                                         </li>
                                                 </ul>
                                         </div>

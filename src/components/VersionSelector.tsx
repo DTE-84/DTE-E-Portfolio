@@ -19,10 +19,8 @@ export default function VersionSelector({ forcedOpen = false, onClose, isOpen = 
 
   // Check sessionStorage only on the client
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      if (!sessionStorage.getItem("dte-version-selected") && !forcedOpen) {
-        setIsVisible(true);
-      }
+    if (!sessionStorage.getItem("dte-version-selected") && !forcedOpen) {
+      setTimeout(() => setIsVisible(true), 0);
     }
   }, [forcedOpen]);
 

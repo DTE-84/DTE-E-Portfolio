@@ -1,4 +1,4 @@
-﻿const nextConfig = {
+const nextConfig = {
   output: 'export',
   trailingSlash: true,
   images: {

@@ -7,35 +7,32 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
+    "@iconify/react": "^6.0.2",
     "@tailwindcss/cli": "^4.2.1",
     "@tailwindcss/vite": "^4.2.1",
     "firebase": "^10.8.0",
     "gsap": "^3.14.2",
     "lucide-react": "^0.344.0",
-    "next": "^16.1.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
     "react-router-dom": "^6.22.0",
     "upgrade": "^1.1.0"
   },
   "devDependencies": {
-    "@iconify/react": "^6.0.2",
     "@tailwindcss/postcss": "^4.2.1",
-    "@types/next": "^9.0.0",
-    "@types/react": "^18.2.55",
-    "@types/react-dom": "^18.2.19",
-    "@vitejs/plugin-react": "^4.2.1",
+    "@types/node": "^20",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
     "autoprefixer": "^10.4.17",
-    "eslint": "^8.56.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
     "postcss": "^8.5.8",
     "tailwindcss": "^4.2.1",
-    "typescript": "5.9.3",
+    "typescript": "^5",
     "vite": "^5.1.0"
   }
 }

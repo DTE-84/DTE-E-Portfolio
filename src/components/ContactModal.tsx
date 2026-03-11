@@ -8,7 +8,14 @@ interface ContactModalProps {
 
 declare global {
   interface Window {
-    emailjs: any;
+    emailjs: {
+      sendForm: (
+        serviceID: string,
+        templateID: string,
+        form: HTMLFormElement,
+        publicKey: string
+      ) => Promise<void>;
+    };
   }
 }
 
@@ -39,7 +46,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
           formRef.current?.reset();
         }, 3000);
       })
-      .catch((error: any) => {
+      .catch((error: unknown) => {
         setIsSending(false);
         console.error("EmailJS Error:", error);
         alert("Direct uplink failed. Please email dte.solutions.llc@gmail.com");

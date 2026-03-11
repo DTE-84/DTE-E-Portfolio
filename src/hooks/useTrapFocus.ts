@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
  * Traps keyboard focus within a given element (ref).
  * Also handles closing on 'Escape' key press.
  */
-export function useTrapFocus(ref: React.RefObject<HTMLElement>, active: boolean, onClose?: () => void) {
+export function useTrapFocus<T extends HTMLElement>(ref: React.RefObject<T | null>, active: boolean, onClose?: () => void) {
   const previouslyFocused = useRef<HTMLElement | null>(null);
 
   useEffect(() => {

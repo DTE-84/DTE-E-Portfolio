@@ -2,14 +2,11 @@
 import { Icon } from "@iconify/react";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useScrollLock } from "../hooks/useScrollLock";
 import { useTrapFocus } from "../hooks/useTrapFocus";
 
-export default function Navbar({
-        onContactClick,
-}: {
-        onContactClick: () => void;
-}) {
+export default function Navbar() {
         const [isOpen, setIsOpen] = useState(false);
         const [scrolled, setScrolled] = useState(false);
         const mobileMenuRef = useRef<HTMLDivElement>(null);
@@ -41,7 +38,7 @@ export default function Navbar({
                                                 href='/v3'
                                                 className='text-2xl font-black tracking-tighter text-white group z-[1001]'
                                                 onClick={closeMenu}>
-                                                <img src="/assets/DREWMAINLOGO.png" alt="DTE" className="h-8 w-auto object-contain group-hover:scale-105 transition-transform" />
+                                                <Image src="/assets/DREWMAINLOGO.png" alt="DTE" width={100} height={32} className="h-8 w-auto object-contain group-hover:scale-105 transition-transform" />
                                         </Link>
 
                                         <div className='hidden md:flex gap-12 items-center'>

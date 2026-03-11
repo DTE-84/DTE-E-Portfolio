@@ -789,7 +789,7 @@ export default function CaseStudyPCSP() {
                     <div key={varName}>
                       <span className="text-purple-400">{varName}</span>
                       <span className="text-zinc-400"> = [] </span>
-                      <span className="text-zinc-600">//{comment}</span>
+                      <span className="text-zinc-600">{"//"}{comment}</span>
                     </div>
                   ))}
                   <div className="pt-2 text-zinc-600">

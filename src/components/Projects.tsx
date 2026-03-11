@@ -82,7 +82,7 @@ const Projects: React.FC = () => {
                         tags: ["Next.js", "Compliance Logic", "HIPAA"],
                         image: "/assets/pcsp1.png",
                         video: "/assets/CaseStudy-PCSP-1771755500766.mp4",
-                        link: "https://dte-84.github.io/DTE-E-Portfolio/case-study-pcsp/",
+                        link: "https://dte-84.github.io/case-study-pcsp/",
                         caseStudy: "/case-study-pcsp",
                         featured: true,
                 },
@@ -219,7 +219,7 @@ const Projects: React.FC = () => {
                                                         REF_ID: {project.id}
                                                 </span>
                                                 <span className='font-mono text-[var(--theme-text-dim)] text-xs'>
-                                                        // {project.year}
+                                                        {"// "} {project.year}
                                                 </span>
                                         </div>
 

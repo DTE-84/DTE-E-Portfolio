@@ -6,6 +6,19 @@ interface FooterProps {
 	onGatewayClick?: () => void;
 }
 
+declare global {
+  interface Window {
+    emailjs: {
+      sendForm: (
+        serviceID: string,
+        templateID: string,
+        form: HTMLFormElement,
+        publicKey: string
+      ) => Promise<void>;
+    };
+  }
+}
+
 const Footer: React.FC<FooterProps> = ({ onContactClick, onGatewayClick }) => {
 	const formRef = useRef<HTMLFormElement>(null);
 	const [isSending, setIsSending] = useState(false);
@@ -17,9 +30,8 @@ const Footer: React.FC<FooterProps> = ({ onContactClick, onGatewayClick }) => {
 
 		setIsSending(true);
 
-		const anyWindow = window as any;
-		if (anyWindow.emailjs) {
-			anyWindow.emailjs
+		if (window.emailjs) {
+			window.emailjs
 				.sendForm(
 					"service_akgmg6r",
 					"template_nx4fvkb",
@@ -34,7 +46,7 @@ const Footer: React.FC<FooterProps> = ({ onContactClick, onGatewayClick }) => {
 						formRef.current?.reset();
 					}, 3000);
 				})
-				.catch((error: any) => {
+				.catch((error: unknown) => {
 					setIsSending(false);
 					console.error("EmailJS Error:", error);
 					alert("Direct uplink failed. Please email dte.solutions.llc@gmail.com");

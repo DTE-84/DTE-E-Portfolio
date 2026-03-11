@@ -178,7 +178,7 @@ const FeaturedCaseStudy = () => {
 			<div className='flex items-center gap-4 mb-16'>
 				<span className='w-12 h-[1px] bg-accent'></span>
 				<span className='text-[14px] font-bold text-whitesmoke uppercase tracking-[0.4em]'>
-					MCSDD<span className='text-accent'>//</span>Case Study
+					MCSDD<span className='text-accent'>{"//"}</span>Case Study
 				</span>
 			</div>
 
@@ -229,7 +229,7 @@ const FeaturedCaseStudy = () => {
 
 					<div className='flex flex-col sm:flex-row gap-6'>
 						<a
-							href='https://dte-84.github.io/DTE-E-Portfolio/case-study-pcsp/'
+							href='https://dte-84.github.io/case-study-pcsp/'
 							target='_blank'
 							rel='noopener noreferrer'
 							className='px-8 py-4 bg-accent text-black font-black uppercase tracking-widest text-xs flex items-center justify-center gap-2 hover:bg-white transition-all hover:scale-105'>
@@ -593,7 +593,7 @@ export default function Home() {
 
 	return (
 		<main className='bg-black min-h-screen text-white selection:bg-accent selection:text-black antialiased font-(family-name:--font-space-grotesk)'>
-			<Navbar onContactClick={scrollToFooter} />
+			<Navbar />
 			<Hero />
 			<ToolsOfTheTrade />
 			<FeaturedCaseStudy />
