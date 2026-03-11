@@ -85,7 +85,7 @@ const Projects: React.FC = () => {
                                 "AI-driven lead intelligence engine for the $84 trillion wealth transfer. Orchestrates behavioral financial modeling to bridge the trust gap between inheritors and fiduciary experts.",
                         tags: ["React 19", "Behavioral Finance", "Lead Intelligence"],
                         image: "/DTE-E-Portfolio/assets/novaui.png",
-                        video: "/DTE-E-Portfolio/assets/DTESolutionsFinanceTrack.mp4", // Syncing to Pulse video until NestLegacy MP4 added
+                        video: "/DTE-E-Portfolio/assets/NestLegacy.mp4", 
                         link: "https://dte-84.github.io/NestLegacy/",
                         featured: true,
                 },

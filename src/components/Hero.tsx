@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
 							<span className='text-[10px] font-mono uppercase tracking-[3px] text-white/40'>Systems & Core</span>
 							<div className='flex flex-wrap justify-center gap-3 md:gap-4 max-w-[350px]'>
 								{["React", "TypeScript", "Python", "Java", "C#", "Node.js"].map((tech) => (
-									<div key={tech} className='flex items-center justify-center w-[100px] h-[38px] bg-accent/5 border border-accent/20 text-accent text-[9px] font-bold uppercase tracking-widest hover:bg-white/10 hover:border-accent hover:backdrop-blur-md transition-all duration-300 cursor-default'>
+									<div key={tech} className='flex items-center justify-center w-[100px] h-[38px] bg-white/5 border border-white/20 text-white/80 text-[9px] font-bold uppercase tracking-widest hover:bg-white/10 hover:border-white hover:backdrop-blur-md transition-all duration-300 cursor-default font-space'>
 										{tech}
 									</div>
 								))}
@@ -82,7 +82,7 @@ const Hero: React.FC = () => {
 							<span className='text-[10px] font-mono uppercase tracking-[3px] text-white/40'>Cloud & Database</span>
 							<div className='flex flex-wrap justify-center gap-3 md:gap-4 max-w-[350px]'>
 								{["AWS", "Azure", "Docker", "SQL", "Git", ".NET"].map((tech) => (
-									<div key={tech} className='flex items-center justify-center w-[100px] h-[38px] bg-accent/5 border border-accent/20 text-accent text-[9px] font-bold uppercase tracking-widest hover:bg-white/10 hover:border-accent hover:backdrop-blur-md transition-all duration-300 cursor-default'>
+									<div key={tech} className='flex items-center justify-center w-[100px] h-[38px] bg-accent/5 border border-accent/20 text-accent text-[9px] font-bold uppercase tracking-widest hover:bg-white/10 hover:border-accent hover:backdrop-blur-md transition-all duration-300 cursor-default font-space'>
 										{tech}
 									</div>
 								))}
@@ -93,7 +93,7 @@ const Hero: React.FC = () => {
 							<span className='text-[10px] font-mono uppercase tracking-[3px] text-white/40'>UI/UX & Method</span>
 							<div className='flex flex-wrap justify-center gap-3 md:gap-4 max-w-[350px]'>
 								{["Tailwind", "GSAP", "Figma", "OOD", "SDLC", "Agile"].map((tech) => (
-									<div key={tech} className='flex items-center justify-center w-[100px] h-[38px] bg-accent/5 border border-accent/20 text-accent text-[9px] font-bold uppercase tracking-widest hover:bg-white/10 hover:border-accent hover:backdrop-blur-md transition-all duration-300 cursor-default'>
+									<div key={tech} className='flex items-center justify-center w-[100px] h-[38px] bg-sky-500/5 border border-sky-500/20 text-sky-400 text-[9px] font-bold uppercase tracking-widest hover:bg-white/10 hover:border-sky-400 hover:backdrop-blur-md transition-all duration-300 cursor-default font-space'>
 										{tech}
 									</div>
 								))}
