@@ -2,11 +2,14 @@
 import { Icon } from "@iconify/react";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { useScrollLock } from "../hooks/useScrollLock";
 import { useTrapFocus } from "../hooks/useTrapFocus";
 
-export default function Navbar() {
+interface NavbarProps {
+  onContactClick?: () => void;
+}
+
+export default function Navbar({ onContactClick }: NavbarProps) {
         const [isOpen, setIsOpen] = useState(false);
         const [scrolled, setScrolled] = useState(false);
         const mobileMenuRef = useRef<HTMLDivElement>(null);
@@ -30,6 +33,16 @@ export default function Navbar() {
                 { href: "#contact", label: "Contact" },
         ];
 
+        const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+                if (href === "#contact" && onContactClick) {
+                        e.preventDefault();
+                        onContactClick();
+                        closeMenu();
+                } else {
+                        closeMenu();
+                }
+        };
+
         return (
                 <>
                         <nav
@@ -49,6 +62,7 @@ export default function Navbar() {
                                                         <a
                                                                 key={href}
                                                                 href={href}
+                                                                onClick={(e) => handleLinkClick(e, href)}
                                                                 className='nav-link text-sm font-bold uppercase tracking-widest text-zinc-400 hover:text-white transition-colors'>
                                                                 {label}
                                                         </a>
@@ -101,8 +115,8 @@ export default function Navbar() {
                                         <a
                                                 key={href}
                                                 href={href}
-                                                className='text-4xl font-black uppercase tracking-tighter text-white hover:text-accent transition-colors'
-                                                onClick={closeMenu}>
+                                                onClick={(e) => handleLinkClick(e, href)}
+                                                className='text-4xl font-black uppercase tracking-tighter text-white hover:text-accent transition-colors'>
                                                 {label}
                                         </a>
                                 ))}
@@ -118,6 +132,3 @@ export default function Navbar() {
                 </>
         );
 }
-
-
-

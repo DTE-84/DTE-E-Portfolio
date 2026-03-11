@@ -118,33 +118,7 @@ const Projects: React.FC = () => {
         ];
 
         const archives: Project[] = [
-                {
-                        id: "PULSE_ARCHIVE",
-                        title: "Pulse Logic Engine",
-                        category: "Behavioral Prototype",
-                        year: "2026",
-                        description:
-                                "Initial architectural breakdown of the Behavioral Financial Conscience. Explores the core psychological frameworks and data orchestration logic that birthed Nova.",
-                        tags: ["Behavioral Logic", "Fintech Architecture"],
-                        image: "/DTE-E-Portfolio/assets/novaui.png",
-                        video: "/DTE-E-Portfolio/assets/DTESolutionsFinanceTrack.mp4",
-                        link: "https://dte-84.github.io/DTE-E-Portfolio/hub/pulse-breakdown.html",
-                        featured: true,
-                },
-                {
-                        id: "FLUFF_ARCHIVE",
-                        title: "Fluff Telemetry Hub",
-                        category: "IoT Documentation",
-                        year: "2026",
-                        description:
-                                "Deep technical specification for the PGA-grade telemetry engine. Documents the geospatial processing and audible assistant protocols.",
-                        tags: ["IoT Telemetry", "Geospatial Logic"],
-                        image: "/DTE-E-Portfolio/assets/fluff/FLUFF-GPS.png",
-                        video: "/DTE-E-Portfolio/assets/Fluff.mp4",
-                        link: "https://dte-84.github.io/Fluff/",
-                        featured: true,
-                },
-                {
+                                {
                         id: "KW_MODELING",
                         title: "Key Wallis Modeling",
                         category: "High-Fidelity UX",

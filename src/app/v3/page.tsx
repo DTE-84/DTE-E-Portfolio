@@ -5,6 +5,7 @@ import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { Icon } from "@iconify/react";
 import BgAnimation from "../../components/BgAnimation";
+import ContactModal from "../../components/ContactModal";
 
 const RevealText: React.FC<{ text: string; isReverse?: boolean }> = ({
 	text,
@@ -476,11 +477,11 @@ const ToolsOfTheTrade = () => {
 			<div className='max-w-[1400px] mx-auto px-4'>
 				<div className='flex flex-col items-center gap-12 w-full'>
 					<div className='flex items-center justify-center gap-4 md:gap-8 py-4'>
-						<div className='h-[1px] w-8 md:w-12 bg-accent shadow-[0_0_10px_var(--accent)]'></div>
-						<h4 className='text-[12px] md:text-[14px] font-bold text-accent uppercase tracking-[4px] md:tracking-[6px] whitespace-nowrap'>
+						<div className='h-[1px] w-8 md:w-12 bg-white/40 shadow-[0_0_10px_rgba(255,255,255,0.2)]'></div>
+						<h4 className='text-[12px] md:text-[14px] font-bold text-white/80 uppercase tracking-[4px] md:tracking-[6px] whitespace-nowrap'>
 							Tools of the Trade
 						</h4>
-						<div className='h-[1px] w-8 md:w-12 bg-accent shadow-[0_0_10px_var(--accent)]'></div>
+						<div className='h-[1px] w-8 md:w-12 bg-white/40 shadow-[0_0_10px_rgba(255,255,255,0.2)]'></div>
 					</div>
 
 					<div className='flex flex-col md:flex-row gap-8 md:gap-12 items-center justify-center w-full'>
@@ -499,7 +500,7 @@ const ToolsOfTheTrade = () => {
 								].map((tech) => (
 									<div
 										key={tech}
-										className='flex items-center justify-center w-[100px] h-[38px] bg-[var(--theme-secondary)]/5 border border-[var(--theme-secondary)]/20 text-[var(--theme-secondary)] text-[9px] font-bold uppercase tracking-widest hover:bg-white/10 hover:border-[var(--theme-secondary)] hover:backdrop-blur-md transition-all duration-300 cursor-default'>
+										className='flex items-center justify-center w-[100px] h-[38px] bg-white/5 border border-white/20 text-white/80 text-[9px] font-bold uppercase tracking-widest hover:bg-white/10 hover:border-white hover:backdrop-blur-md transition-all duration-300 cursor-default'>
 										{tech}
 									</div>
 								))}
@@ -536,7 +537,7 @@ const ToolsOfTheTrade = () => {
 									(tech) => (
 										<div
 											key={tech}
-											className='flex items-center justify-center w-[100px] h-[38px] bg-[var(--theme-offset)]/5 border border-[var(--theme-offset)]/20 text-[var(--theme-offset)] text-[9px] font-black uppercase tracking-widest hover:bg-white/10 hover:border-[var(--theme-offset)] hover:backdrop-blur-md transition-all duration-300 cursor-default'>
+											className='flex items-center justify-center w-[100px] h-[38px] bg-sky-500/5 border border-sky-500/20 text-sky-400 text-[9px] font-black uppercase tracking-widest hover:bg-white/10 hover:border-sky-400 hover:backdrop-blur-md transition-all duration-300 cursor-default'>
 											{tech}
 										</div>
 									),
@@ -550,7 +551,7 @@ const ToolsOfTheTrade = () => {
 	);
 };
 
-const Footer = () => {
+const Footer = ({ onContactClick }: { onContactClick: () => void }) => {
 	return (
 		<footer
 			id='contact'
@@ -559,17 +560,17 @@ const Footer = () => {
 				<h2 className='text-5xl md:text-8xl font-black text-white tracking-tighter mb-12 uppercase animate-fade-in'>
 					Let&apos;s talk.
 				</h2>
-				<a
-					href='mailto:dte.solutions.llc@gmail.com'
-					className='text-2xl md:text-4xl font-bold text-accent hover:text-white transition-colors tracking-tight cursor-pointer'>
+				<button
+					onClick={onContactClick}
+					className='text-2xl md:text-4xl font-bold text-accent hover:text-white transition-colors tracking-tight cursor-pointer bg-transparent border-none outline-none mb-8'>
 					dte.solutions.llc@gmail.com
-				</a>
+				</button>
 				<div className='flex justify-center gap-8 mt-16'>
 					<a
 						href='https://github.com/dte-84'
 						target='_blank'
 						className='text-white/50 hover:text-white transition-colors'>
-						<Icon icon='mdi:gitlab' width='32' height='32' />
+						<Icon icon='mdi:github' width='32' height='32' />
 					</a>
 					<a
 						href='https://linkedin.com/in/dte84'
@@ -587,21 +588,23 @@ const Footer = () => {
 };
 
 export default function Home() {
-	const scrollToFooter = () => {
-		const footer = document.getElementById('contact');
-		if (footer) footer.scrollIntoView({ behavior: 'smooth' });
-	};
+	const [isContactOpen, setIsContactOpen] = useState(false);
 
 	return (
 		<main className='bg-black min-h-screen text-white selection:bg-accent selection:text-black antialiased font-(family-name:--font-space-grotesk)'>
 			<BgAnimation />
-			<Navbar />
+			<Navbar onContactClick={() => setIsContactOpen(true)} />
 			<Hero />
 			<ToolsOfTheTrade />
 			<FeaturedCaseStudy />
 			<Work />
 			<About />
-			<Footer />
+			<Footer onContactClick={() => setIsContactOpen(true)} />
+
+			<ContactModal 
+				isOpen={isContactOpen} 
+				onClose={() => setIsContactOpen(false)} 
+			/>
 
 			<style jsx global>{`
 				h1,
