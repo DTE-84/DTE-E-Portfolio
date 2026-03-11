@@ -82,7 +82,7 @@ const Hero = () => {
 				</div>
 				<p className='text-zinc-400 text-base md:text-lg lg:text-xl max-w-2xl mx-auto mb-10 md:mb-12 leading-relaxed font-medium px-4'>
 					Specializing in high-fidelity interfaces that bridge the gap between
-					complex logic and intuitive human interaction. DTE Solutions builds 
+					complex logic and intuitive human interaction. DTE Solutions builds
 					sophisticated applications to solve global problems.
 				</p>
 				<div className='flex gap-6 justify-center'>
@@ -212,21 +212,19 @@ const FeaturedCaseStudy = () => {
 					<p className='text-zinc-400 text-lg leading-relaxed mb-10 font-medium'>
 						An audit-ready clinical drafting engine engineered for MCSDD. This
 						high-fidelity solution features comprehensive{" "}
-						<span className='text-white'>HCBS compliance logic</span>,
-						automated Due Process documentation, and zero-knowledge PHI
-						security protocols.
+						<span className='text-white'>HCBS compliance logic</span>, automated
+						Due Process documentation, and zero-knowledge PHI security
+						protocols.
 					</p>
 
 					<div className='flex flex-wrap gap-3 mb-12'>
-						{["UI/UX", "Vanilla JS", "HIPAA-Safe", "Healthcare"].map(
-							(tag) => (
-								<span
-									key={tag}
-									className='text-[10px] font-bold text-whitesmoke-500 border border-white/10 px-3 py-1 uppercase tracking-widest'>
-									{tag}
-								</span>
-							),
-						)}
+						{["UI/UX", "Vanilla JS", "HIPAA-Safe", "Healthcare"].map((tag) => (
+							<span
+								key={tag}
+								className='text-[10px] font-bold text-whitesmoke-500 border border-white/10 px-3 py-1 uppercase tracking-widest'>
+								{tag}
+							</span>
+						))}
 					</div>
 
 					<div className='flex flex-col sm:flex-row gap-6'>
@@ -278,18 +276,19 @@ const FeaturedCaseStudy = () => {
 };
 
 const Work = () => {
-	const projects = [                {
-                        id: "NestLegacy",
-                        title: "NestLegacy - Wealth Transfer Engine",
-                        category: "Enterprise Fintech",
-                        year: "2026",
-                        description:
-                                "Digital trust layer for the $84 trillion wealth transfer. AI-driven lead intelligence bridging inheritors to fiduciary experts through behavioral financial modeling.",
-                        tags: ["React 19", "Behavioral Finance", "Lead Intelligence", "Nova AI"],
-                        image: "/DTE-E-Portfolio/assets/novaui.png",
-						video: "/DTE-E-Portfolio/assets/NestLegacy.mp4",
-                        link: "https://dte-84.github.io/NestLegacy/",
-                },
+	const projects = [
+		{
+			id: "NestLegacy",
+			title: "NestLegacy - Wealth Transfer Engine",
+			category: "Enterprise Fintech",
+			year: "2026",
+			description:
+				"Digital trust layer for the $84 trillion wealth transfer. AI-driven lead intelligence bridging inheritors to fiduciary experts through behavioral financial modeling.",
+			tags: ["React 19", "Behavioral Finance", "Lead Intelligence", "Nova AI"],
+			image: "/DTE-E-Portfolio/assets/novaui.png",
+			video: "/DTE-E-Portfolio/assets/NestLegacy.mp4",
+			link: "https://dte-84.github.io/NestLegacy/",
+		},
 		{
 			id: "Pulse",
 			title: "Pulse - Behavioral Intelligence Platform",
@@ -297,12 +296,7 @@ const Work = () => {
 			year: "2026",
 			description:
 				"High-fidelity financial dashboard utilizing behavioral psychology to detect spending rhythms and emotional triggers. Engineered with a FastAPI asynchronous backend and Nova AI integration.",
-			tags: [
-				"React 19",
-				"FastAPI",
-				"MongoDB",
-				"Behavioral AI",
-			],
+			tags: ["React 19", "FastAPI", "MongoDB", "Behavioral AI"],
 			image: "/DTE-E-Portfolio/assets/novaui.png",
 			video: "/DTE-E-Portfolio/assets/Pulse.mp4",
 			link: "https://dte-solutions.icu/pulse-breakdown.html",
@@ -314,12 +308,7 @@ const Work = () => {
 			year: "2026",
 			description:
 				"Multi-source telemetry suite orchestrating real-time GPS coordinates and historical player databases. Features an audible AI assistant for PGA-grade performance analysis.",
-			tags: [
-				"React 19",
-				"Geospatial",
-				"IoT Sync",
-				"Biometrics",
-			],
+			tags: ["React 19", "Geospatial", "IoT Sync", "Biometrics"],
 			image: "/DTE-E-Portfolio/assets/fluff/FLUFF-GPS.png",
 			video: "/DTE-E-Portfolio/assets/Fluff.mp4",
 			link: "https://dte-84.github.io/Fluff/",
@@ -446,15 +435,15 @@ const About = () => {
 							<span className='text-white font-bold block mb-1'>
 								User-Centric Design:
 							</span>
-							Empathizing with the user to ensure interfaces are as intuitive
-							as they are functional.
+							Empathizing with the user to ensure interfaces are as intuitive as
+							they are functional.
 						</li>
 						<li className="relative pl-8 text-zinc-400 leading-relaxed font-medium before:content-['>>'] before:absolute before:left-0 before:text-accent before:font-black before:text-xs before:top-1">
 							<span className='text-white font-bold block mb-1'>
 								Collaborative Excellence:
 							</span>
-							Clear communication and documentation are as vital as the
-							codebase itself.
+							Clear communication and documentation are as vital as the codebase
+							itself.
 						</li>
 						<li className="relative pl-8 text-zinc-400 leading-relaxed font-medium before:content-['>>'] before:absolute before:left-0 before:text-accent before:font-black before:text-xs before:top-1">
 							<span className='text-white font-bold block mb-1'>
@@ -491,20 +480,15 @@ const ToolsOfTheTrade = () => {
 								Systems & Core
 							</span>
 							<div className='flex flex-wrap justify-center gap-3 md:gap-4 max-w-[350px]'>
-								{[
-									"React",
-									"TypeScript",
-									"Python",
-									"Java",
-									"C#",
-									"Node.js",
-								].map((tech) => (
-									<div
-										key={tech}
-										className='flex items-center justify-center w-[100px] h-[38px] bg-white/5 border border-white/20 text-white/80 text-[9px] font-bold uppercase tracking-widest hover:bg-white/10 hover:border-white hover:backdrop-blur-md transition-all duration-300 cursor-default'>
-										{tech}
-									</div>
-								))}
+								{["React", "TypeScript", "Python", "Java", "C#", "Node.js"].map(
+									(tech) => (
+										<div
+											key={tech}
+											className='flex items-center justify-center w-[100px] h-[38px] bg-white/5 border border-white/20 text-white/80 text-[9px] font-bold uppercase tracking-widest hover:bg-white/10 hover:border-white hover:backdrop-blur-md transition-all duration-300 cursor-default'>
+											{tech}
+										</div>
+									),
+								)}
 							</div>
 						</div>
 
@@ -602,9 +586,9 @@ export default function Home() {
 			<About />
 			<Footer onContactClick={() => setIsContactOpen(true)} />
 
-			<ContactModal 
-				isOpen={isContactOpen} 
-				onClose={() => setIsContactOpen(false)} 
+			<ContactModal
+				isOpen={isContactOpen}
+				onClose={() => setIsContactOpen(false)}
 			/>
 
 			<style jsx global>{`
@@ -663,5 +647,3 @@ export default function Home() {
 		</main>
 	);
 }
-
-
