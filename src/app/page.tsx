@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Navbar from "../components/Navbar";
 import BgAnimation from "../components/BgAnimation";
 import Hero from "../components/Hero";
 import About from "../components/About";

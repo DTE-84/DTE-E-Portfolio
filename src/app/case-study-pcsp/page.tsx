@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import BgAnimation from "../../components/BgAnimation";
-
 export default function CaseStudyPCSP() {
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -398,7 +397,7 @@ export default function CaseStudyPCSP() {
                   </p>
                 </div>
 
-                <div className="p-6 rounded-xl border border-[#00ffcc]/20 bg-white/5 backdrop-blur-sm border-red-500/30">
+                <div className="p-6 rounded-xl border border-red-500/30 bg-white/5 backdrop-blur-sm">
                   <h4 className="text-red-400 text-[14px] font-black uppercase tracking-widest mb-3 font-orbitron">
                     The HIPAA Constraint
                   </h4>
