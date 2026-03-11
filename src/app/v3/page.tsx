@@ -305,7 +305,7 @@ const Work = () => {
 			],
 			image: "/DTE-E-Portfolio/assets/novaui.png",
 			video: "/DTE-E-Portfolio/assets/Pulse.mp4",
-			link: "https://dte-84.github.io/DTE-FinancialSolutions/",
+			link: "https://dte-solutions.icu/pulse-breakdown.html",
 		},
 		{
 			id: "Fluff",
