@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { Icon } from "@iconify/react";
 
 const Hero: React.FC = () => {
@@ -55,6 +56,12 @@ const Hero: React.FC = () => {
 							style={{ width: "180px", height: "52px" }}>
 							My Work
 						</a>
+						<Link
+							href='/case-study-pcsp'
+							className='tech-tab group relative flex items-center justify-center gap-3 bg-white/5 backdrop-blur-md border-white/10 text-white/70 font-orbitron text-[13px] tracking-[3px] transition-all duration-300 hover:bg-white/10 hover:border-accent hover:text-accent hover:shadow-[0_0_25px_rgba(var(--theme-accent-rgb),0.2)]'
+							style={{ width: "220px", height: "52px" }}>
+							PCSP Case Study
+						</Link>
 					</div>
 
 					<div className='w-full flex flex-col items-center gap-8 max-w-[1400px] mx-auto px-4'>

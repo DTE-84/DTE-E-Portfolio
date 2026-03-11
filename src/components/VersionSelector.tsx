@@ -53,7 +53,7 @@ export default function VersionSelector({ forcedOpen = false, onClose, isOpen = 
       )}
 
       <div className="text-center mb-16">
-        <div className="text-[#22C55E] font-mono text-[10px] uppercase tracking-[0.5em] mb-4 font-black">Gateway // DTE Solutions</div>
+        <div className="text-accent font-mono text-[10px] uppercase tracking-[0.5em] mb-4 font-black">Gateway // DTE Solutions</div>
         <h1 className="text-5xl md:text-8xl font-black text-white tracking-tighter mb-4 uppercase leading-none">
           Select <br/><span className="text-white/20">Solutions</span>
         </h1>
@@ -83,20 +83,20 @@ export default function VersionSelector({ forcedOpen = false, onClose, isOpen = 
 
         {/* BUSINESS HUB - THE NEW TARGET */}
         <Link
-          href="https://dte-solutions.icu"
+          href="https://dte-84.github.io/DTE-Solutions-Hub/"
           onClick={handleSelect}
-          className="group flex-1 p-10 bg-zinc-900 border-2 border-[#22C55E]/20 hover:border-[#22C55E] transition-all duration-500 relative overflow-hidden rounded-[40px] shadow-2xl shadow-green-500/5"
+          className="group flex-1 p-10 bg-zinc-900 border-2 border-accent/20 hover:border-accent transition-all duration-500 relative overflow-hidden rounded-[40px] shadow-2xl shadow-accent/5"
         >
-          <div className="absolute top-6 left-6 text-[10px] font-black uppercase tracking-widest text-[#22C55E] animate-pulse">Live Solutions</div>
+          <div className="absolute top-6 left-6 text-[10px] font-black uppercase tracking-widest text-accent animate-pulse">Live Solutions</div>
           <div className="mt-16">
             <h2 className="text-4xl font-black tracking-tighter text-white mb-2 uppercase">
-              Solutions Hub<span className="text-[#22C55E]">.</span>
+              Solutions Hub<span className="text-accent">.</span>
             </h2>
             <p className="text-zinc-400 text-sm font-medium leading-relaxed">
               Sophisticated applications solving real-world problems. Explore **PULSE** and **FLUFF** engineering environments.
             </p>
           </div>
-          <div className="absolute bottom-8 right-8 text-[#22C55E] translate-x-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-4xl">
+          <div className="absolute bottom-8 right-8 text-accent translate-x-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-4xl">
             &rarr;
           </div>
         </Link>

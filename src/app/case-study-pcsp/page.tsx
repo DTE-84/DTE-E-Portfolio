@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
+import BgAnimation from "../../components/BgAnimation";
 
 export default function CaseStudyPCSP() {
   useEffect(() => {
@@ -219,15 +220,17 @@ export default function CaseStudyPCSP() {
   ];
 
   return (
-    <div className="bg-[#0a0a0c] min-h-screen text-white font-space selection:bg-[#00ffcc] selection:text-black">
-      {/* Ambient background */}
-      <div className="fixed inset-0 pointer-events-none">
-        <div className="absolute top-0 left-0 w-full h-full opacity-[0.07] bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,_#00ffcc_0%,_transparent_70%)]" />
+    <div className="bg-black min-h-screen text-white font-space selection:bg-accent/30 selection:text-white relative overflow-hidden">
+      <BgAnimation />
+      
+      {/* Ambient background overlay */}
+      <div className="fixed inset-0 pointer-events-none z-0">
+        <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,_var(--theme-accent),_transparent_70%)]" />
       </div>
 
       {/* ── TOC ── */}
       <nav className="toc-nav fixed left-10 top-1/2 -translate-y-1/2 w-[180px] z-[100] hidden xl:block">
-        <ul className="toc-list list-none pl-0 border-l border-[#00ffcc]/10">
+        <ul className="toc-list list-none pl-0 border-l border-white/5">
           {tocLinks.map(({ id, label }, i) => (
             <li
               key={id}
@@ -236,7 +239,7 @@ export default function CaseStudyPCSP() {
             >
               <a
                 href={`#${id}`}
-                className="toc-link text-white/40 no-underline text-[0.7rem] font-orbitron uppercase tracking-[0.15em] block transition-all hover:text-[#00ffcc]"
+                className="toc-link text-white/40 no-underline text-[0.7rem] font-orbitron uppercase tracking-[0.15em] block transition-all hover:text-accent"
               >
                 {label}
               </a>
@@ -251,15 +254,15 @@ export default function CaseStudyPCSP() {
           <div className="flex justify-between items-start mb-12">
             <Link
               href="/"
-              className="text-[10px] font-black uppercase tracking-[0.3em] text-[#00ffcc]/60 hover:text-[#00ffcc] transition-colors flex items-center gap-2"
+              className="text-[10px] font-black uppercase tracking-[0.3em] text-accent/60 hover:text-accent transition-colors flex items-center gap-2"
             >
               <Icon icon="solar:arrow-left-linear" /> Return
             </Link>
             <div className="text-right">
-              <span className="block text-[7px] font-mono text-[#00ffcc]/40 mb-1 uppercase tracking-widest">
+              <span className="block text-[7px] font-mono text-accent/40 mb-1 uppercase tracking-widest">
                 ARCHIVE_ID: 2026_PCSP_PRO_V2
               </span>
-              <div className="inline-block px-3 py-1 rounded-full border border-[#00ffcc]/20 bg-[#00ffcc]/5 text-[#00ffcc] text-[9px] font-black uppercase tracking-[0.4em]">
+              <div className="inline-block px-3 py-1 rounded-full border border-accent/20 bg-accent/5 text-accent text-[9px] font-black uppercase tracking-[0.4em]">
                 CASE STUDY
               </div>
             </div>
@@ -269,7 +272,7 @@ export default function CaseStudyPCSP() {
             <div className="lg:order-2 text-right">
               <h1 className="text-5xl md:text-7xl font-orbitron uppercase leading-none mb-8 glow-text tracking-normal text-white">
                 PCSP Assistant <br />
-                <span className="text-[#00ffcc] italic">Pro</span>
+                <span className="text-accent italic">Pro</span>
               </h1>
               <div className="flex flex-wrap justify-end gap-x-8 gap-y-4 pt-8 border-t border-[#00ffcc]/20">
                 {[
@@ -290,10 +293,10 @@ export default function CaseStudyPCSP() {
                     color: "text-white/90",
                   },
                   // ── Added version tag ──
-                  { label: "Version", value: "v2.0", color: "text-[#00ffcc]" },
+                  { label: "Version", value: "v2.0", color: "text-accent" },
                 ].map(({ label, value, color }) => (
                   <div key={label} className="text-right">
-                    <span className="block text-[10px] font-black text-[#00ffcc]/50 uppercase tracking-widest mb-1">
+                    <span className="block text-[10px] font-black text-accent/50 uppercase tracking-widest mb-1">
                       {label}
                     </span>
                     <span
@@ -311,7 +314,7 @@ export default function CaseStudyPCSP() {
         {/* ── HERO IMAGE ── */}
         <div className="mb-32 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#00ffcc]/20 to-transparent blur opacity-20 group-hover:opacity-40 transition-opacity" />
-          <div className="relative rounded-2xl overflow-hidden border border-[#00ffcc]/40 bg-black aspect-[21/9]">
+          <div className="relative rounded-2xl overflow-hidden border border-accent/40 bg-black aspect-[21/9]">
             <Image
               src="/assets/pcsp1.png"
               alt="PCSP Assistant Pro interface"
@@ -322,8 +325,8 @@ export default function CaseStudyPCSP() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
             <div className="absolute bottom-8 left-8 flex items-center gap-3">
-              <span className="w-2 h-2 rounded-full bg-[#00ffcc] animate-pulse" />
-              <span className="text-[12px] font-mono text-[#00ffcc] uppercase tracking-[0.3em]">
+              <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+              <span className="text-[12px] font-mono text-accent uppercase tracking-[0.3em]">
                 System Active // Missouri DMH Engine v2.0
               </span>
             </div>
@@ -654,7 +657,7 @@ export default function CaseStudyPCSP() {
             <div className="lg:col-span-2 space-y-12">
               {/* I. Data Lifecycle */}
               <div className="space-y-6">
-                <h3 className="text-white font-bold uppercase tracking-widest text-base border-b border-[#00ffcc]/40 pb-2 font-orbitron">
+                <h3 className="text-white font-bold uppercase tracking-widest text-base border-b border-accent/40 pb-2 font-orbitron">
                   I. Data Lifecycle Management
                 </h3>
                 <p className="text-sm text-white/75 leading-relaxed">
@@ -710,10 +713,10 @@ export default function CaseStudyPCSP() {
 
               {/* II. Clinical Logic */}
               <div className="space-y-6">
-                <h3 className="text-white font-bold uppercase tracking-widest text-base border-b border-[#00ffcc]/40 pb-2 font-orbitron">
+                <h3 className="text-white font-bold uppercase tracking-widest text-base border-b border-accent/40 pb-2 font-orbitron">
                   II. Missouri Clinical Logic
                 </h3>
-                <div className="p-6 rounded-xl bg-black border border-[#00ffcc]/40 font-mono text-sm space-y-1">
+                <div className="p-6 rounded-xl bg-black border border-accent/40 font-mono text-sm space-y-1">
                   <div>
                     <span className="text-zinc-600">
                       Active verb structures (Missouri-approved)
@@ -761,7 +764,7 @@ export default function CaseStudyPCSP() {
 
               {/* III. Dynamic Data */}
               <div className="space-y-6">
-                <h3 className="text-white font-bold uppercase tracking-widest text-base border-b border-[#00ffcc]/40 pb-2 font-orbitron">
+                <h3 className="text-white font-bold uppercase tracking-widest text-base border-b border-accent/40 pb-2 font-orbitron">
                   III. Dynamic Data Architecture
                 </h3>
                 <p className="text-sm text-white/75 leading-relaxed">
@@ -775,7 +778,7 @@ export default function CaseStudyPCSP() {
                   <span className="text-[#00ffcc] font-mono">.pcsp</span>{" "}
                   export.
                 </p>
-                <div className="p-6 rounded-xl bg-black border border-[#00ffcc]/40 font-mono text-sm space-y-1">
+                <div className="p-6 rounded-xl bg-black border border-accent/40 font-mono text-sm space-y-1">
                   {[
                     // ── FIXED: added goalsData ──
                     ["legalReps", "guardians, POA, custodians"],
@@ -800,7 +803,7 @@ export default function CaseStudyPCSP() {
 
               {/* IV. UI Components */}
               <div className="space-y-6">
-                <h3 className="text-white font-bold uppercase tracking-widest text-base border-b border-[#00ffcc]/40 pb-2 font-orbitron">
+                <h3 className="text-white font-bold uppercase tracking-widest text-base border-b border-accent/40 pb-2 font-orbitron">
                   IV. Interactive UI Components
                 </h3>
                 <p className="text-sm text-white/75 leading-relaxed">
@@ -817,7 +820,7 @@ export default function CaseStudyPCSP() {
 
               {/* V. Output Pipeline */}
               <div className="space-y-6">
-                <h3 className="text-white font-bold uppercase tracking-widest text-base border-b border-[#00ffcc]/40 pb-2 font-orbitron">
+                <h3 className="text-white font-bold uppercase tracking-widest text-base border-b border-accent/40 pb-2 font-orbitron">
                   V. Output Pipeline
                 </h3>
                 <div className="grid md:grid-cols-3 gap-4">
@@ -859,7 +862,7 @@ export default function CaseStudyPCSP() {
 
               {/* VI. Deployment */}
               <div className="space-y-4">
-                <h3 className="text-white font-bold uppercase tracking-widest text-base border-b border-[#00ffcc]/40 pb-2 font-orbitron">
+                <h3 className="text-white font-bold uppercase tracking-widest text-base border-b border-accent/40 pb-2 font-orbitron">
                   VI. Deployment Strategy
                 </h3>
                 <p className="text-sm text-white/75 leading-relaxed">
