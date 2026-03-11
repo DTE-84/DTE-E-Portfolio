@@ -42,32 +42,8 @@ export default function Home() {
 
                         <main id="main-content" className="relative z-10 bg-transparent">
                                 <Hero />
-                                
-                                {/* Behavioral Interface Preview */}
-                                <section className="pb-32 px-8 max-w-6xl mx-auto -mt-10 relative z-20">
-                                        <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-2 md:p-4 rounded-[32px] shadow-[0_0_50px_rgba(0,0,0,0.5)] overflow-hidden relative group">
-                                                <div className="absolute inset-0 bg-gradient-to-tr from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                                                <video 
-                                                        autoPlay 
-                                                        loop 
-                                                        muted 
-                                                        playsInline 
-                                                        className="w-full h-auto rounded-2xl opacity-90 group-hover:opacity-100 transition-opacity duration-700"
-                                                >
-                                                        <source src="/pulse.mp4" type="video/mp4" />
-                                                </video>
-                                                
-                                                {/* Interface Deco */}
-                                                <div className="absolute top-6 left-6 flex gap-2">
-                                                        <div className="w-2 h-2 rounded-full bg-red-500/40"></div>
-                                                        <div className="w-2 h-2 rounded-full bg-amber-500/40"></div>
-                                                        <div className="w-2 h-2 rounded-full bg-accent/40"></div>
-                                                </div>
-                                                <div className="absolute bottom-6 right-8 font-mono text-[8px] uppercase tracking-[0.4em] text-white/20 italic">Behavioral Stream Active</div>
-                                        </div>
-                                </section>
 
-                                <About />
+<About />
                                 <Projects />
                         </main>
 

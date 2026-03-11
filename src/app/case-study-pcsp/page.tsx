@@ -22,7 +22,7 @@ export default function CaseStudyPCSP() {
           }
         });
       },
-      { threshold: 0, rootMargin: "-20% 0px -70% 0px" },
+      { threshold: 0.2, rootMargin: "-10% 0px -40% 0px" },
     );
     document
       .querySelectorAll("section[id]")
@@ -220,6 +220,27 @@ export default function CaseStudyPCSP() {
 
   return (
     <div className="bg-black min-h-screen text-white font-space selection:bg-accent/30 selection:text-white relative overflow-hidden">
+      <style jsx global>{`
+        .toc-item.active .toc-link {
+          color: #00ffcc !important;
+          text-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
+          transform: translateX(8px);
+        }
+        .toc-item.active::before {
+          content: "";
+          position: absolute;
+          left: -1px;
+          top: 0;
+          bottom: 0;
+          width: 3px;
+          background: #00ffcc;
+          box-shadow: 0 0 15px #00ffcc;
+          z-index: 10;
+        }
+        .toc-item {
+          transition: all 0.4s ease;
+        }
+      `}</style>
       <BgAnimation />
       
       {/* Ambient background overlay */}
