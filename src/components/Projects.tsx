@@ -60,7 +60,23 @@ const VideoPlayer: React.FC<{ src: string; poster: string }> = ({ src, poster })
 
 const Projects: React.FC = () => {
 
-        const deployments: Project[] = [                {
+        const featuredCaseStudy: Project = {
+                id: "PCSP_ASSISTANT",
+                title: "PCSP Assistant Pro",
+                category: "Featured Case Study",
+                year: "2025",
+                description:
+                        "Clinical data validation engine synthesizing unstructured patient narratives with Missouri DMH/HCBS compliance frameworks; features zero-footprint PHI security and automated documentation logic.",
+                tags: ["Next.js", "Compliance Logic", "HIPAA", "Zero-Footprint"],
+                image: "/DTE-E-Portfolio/assets/pcsp1.png",
+                video: "/DTE-E-Portfolio/assets/CaseStudy-PCSP-1771755500766.mp4",
+                link: "https://dte-84.github.io/DTE-E-Portfolio/case-study-pcsp/",
+                caseStudy: "/DTE-E-Portfolio/case-study-pcsp/",
+                featured: true,
+        };
+
+        const deployments: Project[] = [
+                {
                         id: "NEST_LEGACY",
                         title: "NestLegacy",
                         category: "Enterprise Wealth Technology",
@@ -69,21 +85,8 @@ const Projects: React.FC = () => {
                                 "AI-driven lead intelligence engine for the $84 trillion wealth transfer. Orchestrates behavioral financial modeling to bridge the trust gap between inheritors and fiduciary experts.",
                         tags: ["React 19", "Behavioral Finance", "Lead Intelligence"],
                         image: "/DTE-E-Portfolio/assets/novaui.png",
+                        video: "/DTE-E-Portfolio/assets/DTESolutionsFinanceTrack.mp4", // Syncing to Pulse video until NestLegacy MP4 added
                         link: "https://dte-84.github.io/NestLegacy/",
-                        featured: true,
-                },
-                {
-                        id: "PCSP_ASSISTANT",
-                        title: "PCSP Assistant Pro",
-                        category: "Healthcare Compliance Engine",
-                        year: "2025",
-                        description:
-                                "Clinical data validation engine synthesizing unstructured patient narratives with Missouri DMH/HCBS compliance frameworks; features zero-knowledge PHI security and automated documentation logic.",
-                        tags: ["Next.js", "Compliance Logic", "HIPAA"],
-                        image: "/DTE-E-Portfolio/assets/pcsp1.png",
-                        video: "/DTE-E-Portfolio/assets/CaseStudy-PCSP-1771755500766.mp4",
-                        link: "https://dte-84.github.io/case-study-pcsp/",
-                        caseStudy: "/case-study-pcsp",
                         featured: true,
                 },
                 {
@@ -125,7 +128,7 @@ const Projects: React.FC = () => {
                         tags: ["Behavioral Logic", "Fintech Architecture"],
                         image: "/DTE-E-Portfolio/assets/novaui.png",
                         video: "/DTE-E-Portfolio/assets/DTESolutionsFinanceTrack.mp4",
-                        link: "/hub/pulse-breakdown.html",
+                        link: "https://dte-84.github.io/DTE-E-Portfolio/hub/pulse-breakdown.html",
                         featured: true,
                 },
                 {
@@ -269,6 +272,17 @@ const Projects: React.FC = () => {
         return (
                 <section id='projects' className='relative py-32 bg-transparent'>
                         <div className='container-main'>
+                                {/* 01 // FEATURED CASE STUDY */}
+                                <div className='mb-60'>
+                                        <div className='flex items-center gap-4 mb-16'>
+                                                <div className='w-12 h-[1px] bg-accent'></div>
+                                                <span className='font-orbitron text-accent tracking-[0.3em] text-sm font-bold'>
+                                                        01 // FEATURED INTEL
+                                                </span>
+                                        </div>
+                                        <ProjectRow project={featuredCaseStudy} index={0} />
+                                </div>
+
                                 {/* 02 // DEPLOYMENTS */}
                                 <div className='flex flex-col md:flex-row justify-between items-end mb-24'>
                                         <div>
@@ -279,23 +293,23 @@ const Projects: React.FC = () => {
                                                         </span>
                                                 </div>
                                                 <h2 className='text-5xl md:text-7xl font-black text-white uppercase tracking-tighter'>
-                                                        DTE <br />
-                                                        <span className='text-transparent bg-clip-text bg-gradient-to-r from-[var(--theme-accent)] to-[var(--theme-secondary)]'>
-                                                                Solutions
+                                                        Active <br />
+                                                        <span className='text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent/40'>
+                                                                Production
                                                         </span>
                                                 </h2>
                                         </div>
                                         <div className='hidden md:block'>
                                                 <div className='flex items-center gap-2 text-[var(--theme-text-dim)] font-mono text-xs'>
                                                         <div className='w-2 h-2 rounded-full bg-[var(--theme-accent)] animate-pulse'></div>
-                                                        ACTIVE PRODUCTION STATE
+                                                        SYSTEMS ONLINE
                                                 </div>
                                         </div>
                                 </div>
 
                                 <div className='flex flex-col gap-40 mb-60'>
                                         {deployments.map((project, index) => (
-                                                <ProjectRow key={project.id} project={project} index={index} />
+                                                <ProjectRow key={project.id} project={project} index={index + 1} />
                                         ))}
                                 </div>
 
@@ -310,7 +324,7 @@ const Projects: React.FC = () => {
                                                 </div>
                                                 <h2 className='text-5xl md:text-7xl font-black text-white uppercase tracking-tighter'>
                                                         Legacy <br />
-                                                        <span className='text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent/20'>
+                                                        <span className='text-transparent bg-clip-text bg-gradient-to-r from-accent/60 to-accent/20'>
                                                                 Solutions
                                                         </span>
                                                 </h2>
@@ -319,7 +333,7 @@ const Projects: React.FC = () => {
 
                                 <div className='flex flex-col gap-40'>
                                         {archives.map((project, index) => (
-                                                <ProjectRow key={project.id} project={project} index={index + 1} /> // index+1 to start archives zipper differently
+                                                <ProjectRow key={project.id} project={project} index={index + deployments.length + 1} />
                                         ))}
                                 </div>
                         </div>
