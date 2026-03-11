@@ -71,6 +71,7 @@ const Hero: React.FC = () => {
 					</div>
 
 					<div className='flex flex-col md:flex-row gap-8 md:gap-12 items-center justify-center w-full mt-12'>
+						{/* SYSTEMS & CORE - WHITE */}
 						<div className='flex flex-col items-center gap-4'>
 							<span className='text-[10px] font-mono uppercase tracking-[3px] text-white/40'>Systems & Core</span>
 							<div className='flex flex-wrap justify-center gap-3 md:gap-4 max-w-[350px]'>
@@ -82,17 +83,21 @@ const Hero: React.FC = () => {
 							</div>
 						</div>
 						<div className='w-12 h-[1px] bg-white/10 md:w-[1px] md:h-12'></div>
+						
+						{/* CLOUD & DATABASE - KINETIC GREEN */}
 						<div className='flex flex-col items-center gap-4'>
 							<span className='text-[10px] font-mono uppercase tracking-[3px] text-white/40'>Cloud & Database</span>
 							<div className='flex flex-wrap justify-center gap-3 md:gap-4 max-w-[350px]'>
 								{["AWS", "Azure", "Docker", "SQL", "Git", ".NET"].map((tech) => (
-									<div key={tech} className='flex items-center justify-center w-[100px] h-[38px] bg-accent/5 border border-accent/20 text-accent text-[9px] font-bold uppercase tracking-widest hover:bg-white/10 hover:border-accent hover:backdrop-blur-md transition-all duration-300 cursor-default font-space'>
+									<div key={tech} className='flex items-center justify-center w-[100px] h-[38px] bg-emerald-500/5 border border-emerald-500/20 text-emerald-400 text-[9px] font-bold uppercase tracking-widest hover:bg-white/10 hover:border-emerald-400 hover:backdrop-blur-md transition-all duration-300 cursor-default font-space'>
 										{tech}
 									</div>
 								))}
 							</div>
 						</div>
 						<div className='w-12 h-[1px] bg-white/10 md:w-[1px] md:h-12'></div>
+						
+						{/* UI/UX & METHOD - ELECTRIC BLUE */}
 						<div className='flex flex-col items-center gap-4'>
 							<span className='text-[10px] font-mono uppercase tracking-[3px] text-white/40'>UI/UX & Method</span>
 							<div className='flex flex-wrap justify-center gap-3 md:gap-4 max-w-[350px]'>
