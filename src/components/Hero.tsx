@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
 						<div className='flex flex-col items-center gap-4'>
 							<span className='text-[10px] font-mono uppercase tracking-[3px] text-white/40'>Cloud & Database</span>
 							<div className='flex flex-wrap justify-center gap-3 md:gap-4 max-w-[350px]'>
-								{["AWS", "Azure", "Docker", "SQL", "Git", ".NET"].map((tech) => (
+								{["AWS", "MongoDB", "Docker", "SQL", "Git", ".NET"].map((tech) => (
 									<div key={tech} className='flex items-center justify-center w-[100px] h-[38px] bg-emerald-500/5 border border-emerald-500/20 text-emerald-400 text-[9px] font-bold uppercase tracking-widest hover:bg-white/10 hover:border-emerald-400 hover:backdrop-blur-md transition-all duration-300 cursor-default font-space'>
 										{tech}
 									</div>
