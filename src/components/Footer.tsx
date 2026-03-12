@@ -78,7 +78,7 @@ const Footer: React.FC<FooterProps> = ({ onContactClick, onGatewayClick }) => {
 
 						<div className='flex flex-col gap-4 pt-12'>
 							<a
-								href='/DTE-E-Portfolio/Drew_T_Ernst_Resume.pdf'
+								href='/DTE-E-Portfolio/DTE_Resume.pdf'
 								target='_blank'
 								className='flex items-center gap-4 text-white group hover:text-accent transition-colors'>
 								<div className='w-10 h-10 rounded-none border border-accent/40 flex items-center justify-center group-hover:border-accent/50 transition-all'>
@@ -89,7 +89,7 @@ const Footer: React.FC<FooterProps> = ({ onContactClick, onGatewayClick }) => {
 								</span>
 							</a>
 							<a
-								href='/DTE-E-Portfolio/Drew_T_Ernst_Resume.pdf' 
+								href='/DTE-E-Portfolio/DTE_Resume.pdf' 
 								download
 								className='flex items-center gap-4 text-white group hover:text-accent transition-colors'>
 								<div className='w-10 h-10 rounded-none border border-accent/40 flex items-center justify-center group-hover:border-accent/50 transition-all'>
