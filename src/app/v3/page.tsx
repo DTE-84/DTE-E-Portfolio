@@ -244,7 +244,7 @@ const Footer = ({ onContactClick }: { onContactClick: () => void }) => {
 					>
 						Direct Contact
 					</button>
-					<a href="/DTE-E-Portfolio/assets/DTE_Resume.pdf" target="_blank" className="px-8 py-4 border border-white/10 text-white font-black uppercase text-xs rounded-xl hover:bg-white/5 transition-all">
+					<a href="/DTE-E-Portfolio/assets/DrewTErnst_Resume.pdf" target="_blank" className="px-8 py-4 border border-white/10 text-white font-black uppercase text-xs rounded-xl hover:bg-white/5 transition-all">
 						Resume.pdf
 					</a>
 				</div>
