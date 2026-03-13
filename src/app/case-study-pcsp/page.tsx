@@ -367,26 +367,18 @@ export default function CaseStudyPCSP() {
             </div>
             <div className="lg:col-span-2 space-y-8">
               <p className="text-lg text-white/95 font-medium leading-relaxed">
-                Marion County MCSDD case managers were spending nearly half
-                their week on documentation — not because the work was
-                complicated, but because the tools were broken.
+                Marion County MCSDD case managers were dedicating significant time to documentation — an opportunity to streamline their workflow and accelerate service delivery.
               </p>
               <p className="text-base text-white/70 leading-relaxed">
-                Each Person Centered Service Plan required manually documenting
-                nine clinical domains across multiple disconnected systems.
-                Missouri state auditors check every one of them, and vague or
-                passive phrasing —{" "}
+                Each Person Centered Service Plan required documenting nine clinical domains with precision. Missouri state auditors require specific active language structures —{" "}
+                <em className="text-[#00ffcc]">
+                  &quot;Staff will provide instructional support to learn how to use the AAC device&quot;
+                </em>{" "}
+                rather than{" "}
                 <em className="text-white/90">
                   &quot;will try to improve communication&quot;
-                </em>{" "}
-                instead of{" "}
-                <em className="text-[#00ffcc]">
-                  &quot;Staff will provide instructional support to learn how to
-                  use the AAC device&quot;
-                </em>{" "}
-                — gets a plan rejected outright. A rejected plan doesn&apos;t
-                just mean more paperwork. It means a client&apos;s services are
-                delayed.
+                </em>
+                . The goal was to help staff achieve audit-ready language on the first draft, accelerating approval timelines and service delivery.
               </p>
 
               <div className="grid gap-6">
