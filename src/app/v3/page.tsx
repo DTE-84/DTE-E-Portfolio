@@ -67,8 +67,20 @@ const ProjectCard = ({ project }: { project: any }) => {
 	if (!project) return null;
 
 	return (
-		<div className="group relative bg-white/5 border border-white/10 rounded-2xl overflow-hidden transition-all hover:border-accent/50 p-6">
-			<div className="flex flex-col gap-6">
+		<div className="group relative bg-white/5 border border-white/10 rounded-2xl overflow-hidden transition-all hover:border-accent/50">
+			{project.video && (
+				<div className="relative aspect-video overflow-hidden bg-black">
+					<video
+						src={project.video}
+						className="w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+						autoPlay
+						loop
+						muted
+						playsInline
+					/>
+				</div>
+			)}
+			<div className="flex flex-col gap-6 p-6">
 				<div className="flex justify-between items-start">
 					<div>
 						<span className="text-[10px] font-mono text-accent uppercase tracking-widest mb-2 block">
@@ -108,6 +120,7 @@ const Work = () => {
 				"Digital trust layer for the $84 trillion wealth transfer. AI-driven lead intelligence bridging inheritors to fiduciary experts through behavioral financial modeling.",
 			tags: ["React 19", "Behavioral Finance", "Lead Intelligence", "Nova AI"],
 			link: "https://dte-84.github.io/NestLegacy/",
+			video: "/DTE-E-Portfolio/assets/NestLegacy.mp4",
 		},
 		{
 			id: "Pulse",
@@ -118,6 +131,7 @@ const Work = () => {
 				"High-fidelity financial dashboard utilizing behavioral psychology to detect spending rhythms and emotional triggers. Engineered with a FastAPI asynchronous backend and Nova AI integration.",
 			tags: ["React 19", "FastAPI", "MongoDB", "Behavioral AI"],
 			link: "https://dte-solutions.icu/pulse-breakdown.html",
+			video: "/DTE-E-Portfolio/assets/Pulse.mp4",
 		},
 		{
 			id: "Fluff",
@@ -128,6 +142,7 @@ const Work = () => {
 				"Multi-source telemetry suite orchestrating real-time GPS coordinates and historical player databases. Features an audible AI assistant for PGA-grade performance analysis.",
 			tags: ["React 19", "Geospatial", "IoT Sync", "Biometrics"],
 			link: "https://dte-84.github.io/Fluff/",
+			video: "/DTE-E-Portfolio/assets/Fluff.mp4",
 		},
 		{
 			id: "SIKNIGHT",
@@ -138,6 +153,7 @@ const Work = () => {
 				"High-engagement gaming portal featuring an interactive engine, real-time leaderboard, and virtual currency.",
 			tags: ["React", "Interactive", "Game Design"],
 			link: "https://dte-84.github.io/SiKnight/",
+			video: "/DTE-E-Portfolio/assets/siknight.mp4",
 		},
 		{
 			id: "TONYS",
@@ -148,6 +164,7 @@ const Work = () => {
 				"Service-oriented architecture featuring a custom interactive engine for visual data comparison.",
 			tags: ["Vanilla JS", "UI/UX", "GSAP"],
 			link: "https://tonyslandscapingllc.com",
+			video: "/DTE-E-Portfolio/assets/TonysLandscaping.mp4",
 		}
 	];
 
