@@ -165,6 +165,17 @@ const Work = () => {
 			tags: ["Vanilla JS", "UI/UX", "GSAP"],
 			link: "https://tonyslandscapingllc.com",
 			video: "/DTE-E-Portfolio/assets/TonysLandscaping.mp4",
+		},
+		{
+			id: "LegacyPortfolio",
+			title: "Protocol V2.2 - Legacy Nexus",
+			category: "Interactive Architecture",
+			year: "2025",
+			description:
+				"The high-fidelity foundation of the DTE ecosystem. An immersive, motion-heavy portfolio showcasing complex state management and cinematic UX.",
+			tags: ["Next.js", "Framer Motion", "React", "System Design"],
+			link: "https://dte-84.github.io/DTE-E-Portfolio/",
+			video: "/DTE-E-Portfolio/assets/v2.2portfolio.mp4",
 		}
 	];
 
