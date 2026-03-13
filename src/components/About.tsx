@@ -70,7 +70,9 @@ const About: React.FC = () => {
 				<div className='grid lg:grid-cols-3 gap-12 lg:gap-20'>
 					<div className='lg:col-span-2'>
 						<RevealText text='Specializing in the intersection of advanced data orchestration and technical precision, DTE Solutions builds sophisticated applications and programs designed to solve complex world problems. I engineer high-fidelity interfaces that serve as intuitive bridges between complex data systems and the human users who navigate them.' />
+						<br />
 						<RevealText text="My background in operations management provides a unique 'business-first' lens. I view data not as a static resource, but as a critical component of a larger problem-solving ecosystem where communication protocols and collaborative engineering are paramount." />
+						<br />
 						<RevealText text="Transitioning from leadership to frontend development has refined my focus on clarity, impact, and systemic efficiency. I don't just build components; I engineer workflows that streamline performance and drive measurable results for global challenges." />
 					</div>
 
