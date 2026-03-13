@@ -7,6 +7,9 @@ import Image from "next/image";
 import BgAnimation from "../../components/BgAnimation";
 export default function CaseStudyPCSP() {
   useEffect(() => {
+    // Force green theme for case study page
+    document.documentElement.removeAttribute('data-theme');
+    
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -366,9 +369,13 @@ export default function CaseStudyPCSP() {
               </h2>
             </div>
             <div className="lg:col-span-2 space-y-8">
-              <p className="text-lg text-white/95 font-medium leading-relaxed">
-                Marion County MCSDD case managers were dedicating significant time to documentation — an opportunity to streamline their workflow and accelerate service delivery.
-              </p>
+              <div className="relative">
+                <div className="absolute right-0 top-0 bottom-0 w-[3px] bg-gradient-to-b from-[#00ffcc] to-transparent opacity-40" />
+                <div className="absolute right-0 left-0 bottom-0 h-[3px] bg-gradient-to-r from-[#00ffcc] to-transparent opacity-40" />
+                <p className="text-lg text-white/95 font-medium leading-relaxed pr-6 pb-6">
+                  Marion County MCSDD case managers were dedicating significant time to documentation — an opportunity to streamline their workflow and accelerate service delivery.
+                </p>
+              </div>
               <p className="text-base text-white/70 leading-relaxed">
                 Each Person Centered Service Plan required documenting nine clinical domains with precision. Missouri state auditors require specific active language structures —{" "}
                 <em className="text-[#00ffcc]">
@@ -387,7 +394,7 @@ export default function CaseStudyPCSP() {
                     The Administrative Burden
                   </h4>
                   <p className="text-base text-white/85">
-                    Case Managers spent 40% of their week on manual data entry
+                    Case Managers spent a significant amount of their week on manual data entry
                     across disconnected systems — demographics, communication
                     profiles, personal preferences, relationships, health risk,
                     and measurable outcomes, all by hand. The result was extreme
@@ -441,10 +448,16 @@ export default function CaseStudyPCSP() {
             </div>
             <div className="lg:col-span-2 space-y-12">
               <div className="space-y-5">
-                <p className="text-lg text-white/95 font-medium leading-relaxed">
-                  The answer wasn&apos;t a SaaS platform or an enterprise
-                  system. It was a single HTML file.
-                </p>
+                <div className="relative">
+                  <div className="absolute right-0 top-0 bottom-0 w-[3px] bg-gradient-to-b from-[#00ffcc] to-transparent opacity-40" />
+                  <div className="absolute right-0 left-0 bottom-0 h-[3px] bg-gradient-to-r from-[#00ffcc] to-transparent opacity-40" />
+                  <div className="pr-6 pb-6">
+                    <p className="text-lg text-white/95 font-medium leading-relaxed">
+                      The answer wasn&apos;t a SaaS platform or an enterprise
+                      system. It was a single HTML file.
+                    </p>
+                  </div>
+                </div>
                 <p className="text-base text-white/70 leading-relaxed">
                   I engineered PCSP Assistant Pro as a{" "}
                   <span className="text-white font-semibold">
@@ -523,12 +536,16 @@ export default function CaseStudyPCSP() {
               </h2>
             </div>
             <div className="lg:col-span-2 space-y-12">
-              <p className="text-base text-white/70 leading-relaxed">
-                The execution wasn&apos;t linear. Every architectural decision
-                was a deliberate tradeoff between compliance, usability, and
-                maintainability — built for staff who needed a tool, not a
-                tutorial.
-              </p>
+              <div className="relative">
+                <div className="absolute right-0 top-0 bottom-0 w-[3px] bg-gradient-to-b from-[#00ffcc] to-transparent opacity-40" />
+                <div className="absolute right-0 left-0 bottom-0 h-[3px] bg-gradient-to-r from-[#00ffcc] to-transparent opacity-40" />
+                <p className="text-base text-white/70 leading-relaxed pr-6 pb-6">
+                  The execution wasn&apos;t linear. Every architectural decision
+                  was a deliberate tradeoff between compliance, usability, and
+                  maintainability — built for staff who needed a tool, not a
+                  tutorial.
+                </p>
+              </div>
 
               <div className="space-y-8">
                 {executionSteps.map(({ num, title, body }) => (
@@ -611,11 +628,15 @@ export default function CaseStudyPCSP() {
               </h2>
             </div>
             <div className="lg:col-span-2 space-y-12">
-              <p className="text-base text-white/70 leading-relaxed">
-                The shift from passive to active documentation wasn&apos;t
-                incremental — it was structural. Every metric below reflects a
-                process that no longer requires rework.
-              </p>
+              <div className="relative">
+                <div className="absolute right-0 top-0 bottom-0 w-[3px] bg-gradient-to-b from-[#00ffcc] to-transparent opacity-40" />
+                <div className="absolute right-0 left-0 bottom-0 h-[3px] bg-gradient-to-r from-[#00ffcc] to-transparent opacity-40" />
+                <p className="text-base text-white/70 leading-relaxed pr-6 pb-6">
+                  The shift from passive to active documentation wasn&apos;t
+                  incremental — it was structural. Every metric below reflects a
+                  process that no longer requires rework.
+                </p>
+              </div>
               <div className="overflow-x-auto">
                 <table className="w-full text-left border-separate border-spacing-y-2">
                   <thead>
