@@ -92,10 +92,10 @@ export default function Navbar({ onContactClick, theme, onThemeToggle }: NavbarP
                                                         </div>
                                                 )}
                                                 <Link
-                                                        href='/'
+                                                        href='https://dte-84.github.io/DTE-E-Portfolio/v3'
                                                         className='group relative px-4 py-2 overflow-hidden border border-white/10 transition-all hover:border-accent/50'>
                                                         <span className='relative z-10 text-[10px] font-black uppercase tracking-[0.3em] text-white/70 group-hover:text-accent transition-colors'>
-                                                                Switch to V2.2
+                                                                Switch to V3
                                                         </span>
                                                         <div className='absolute inset-0 z-0 bg-accent/5 opacity-0 group-hover:opacity-100 transition-opacity' />
                                                 </Link>
