@@ -55,7 +55,7 @@ const Hero = () => {
 				</h1>
 				<div className="max-w-2xl mt-8">
 					<RevealText 
-						text="Architecting high-fidelity analytical ecosystems where behavioral intelligence meets pure data integrity. Specializing in high-stakes clinical and financial infrastructure."
+						text="Engineering highly analytical systems where behavioral intelligence meets pure data integrity. Specializing in high-stakes clinical and financial infrastructure."
 					/>
 				</div>
 			</div>
