@@ -234,7 +234,7 @@ const Footer = ({ onContactClick }: { onContactClick: () => void }) => {
 		<footer className="py-20 px-6 md:px-12 max-w-7xl mx-auto border-t border-white/5">
 			<div className="flex flex-col md:flex-row justify-between items-center gap-12">
 				<div className="flex flex-col gap-4 text-center md:text-left">
-					<h2 className="text-3xl font-black uppercase tracking-tighter italic text-accent">Initialize Uplink.</h2>
+					<h2 className="text-3xl font-black uppercase tracking-tighter italic text-accent">Let's Link Up.</h2>
 					<p className="text-zinc-500 text-sm">STL STL Division // © 2026 DTE Solutions</p>
 				</div>
 				<div className="flex gap-6">
