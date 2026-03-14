@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   
-  basePath: '/DTE-E-Portfolio',
   trailingSlash: true,
   images: {
     unoptimized: true,
