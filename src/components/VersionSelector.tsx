@@ -81,10 +81,17 @@ export default function VersionSelector({ forcedOpen = false, onClose, isOpen = 
         <Link
           href="https://dte-84.github.io/DTE-Solutions-Hub/"
           onClick={handleSelect}
-          className="group flex-1 p-10 bg-zinc-900 border-2 border-white/10 hover:border-white transition-all duration-500 relative overflow-hidden rounded-[40px] shadow-2xl"
+          className="group flex-1 p-10 bg-zinc-900 border-2 border-white/10 hover:border-white transition-all duration-500 relative overflow-hidden rounded-[40px] shadow-2xl flex flex-col items-center justify-center"
         >
           <div className="absolute top-6 left-6 text-[10px] font-black uppercase tracking-widest text-white/40 animate-pulse">Live Solutions</div>
-          <div className="mt-16 text-center">
+          <div className="mb-6 relative w-20 h-20 group-hover:scale-110 transition-transform duration-500">
+            <img 
+              src="/DTE-E-Portfolio/assets/dtesolutionslogoblkcrn.png" 
+              alt="DTE Solutions" 
+              className="w-full h-full object-contain filter brightness-0 invert opacity-40 group-hover:opacity-100 transition-opacity"
+            />
+          </div>
+          <div className="text-center">
             <h2 className="text-4xl font-black tracking-tighter text-white mb-2 uppercase">
               Solutions Hub<span>.</span>
             </h2>

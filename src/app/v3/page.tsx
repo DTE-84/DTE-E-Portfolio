@@ -167,15 +167,15 @@ const Work = () => {
 			video: "/DTE-E-Portfolio/assets/TonysLandscaping.mp4",
 		},
 		{
-			id: "LegacyPortfolio",
-			title: "Protocol V2.2 - Legacy Nexus",
-			category: "Interactive Architecture",
-			year: "2025",
+			id: "PCSP",
+			title: "PCSP Assistant Pro",
+			category: "Clinical Documentation",
+			year: "2026",
 			description:
-				"The high-fidelity foundation of the DTE ecosystem. An immersive, motion-heavy portfolio showcasing complex state management and cinematic UX.",
-			tags: ["Next.js", "Framer Motion", "React", "System Design"],
-			link: "https://dte-84.github.io/DTE-E-Portfolio/",
-			video: "/DTE-E-Portfolio/assets/v2.2portfolio.mp4",
+				"HIPAA-compliant clinical documentation engine for state government audits. Designed to streamline PCSP workflows through intelligent narrative modeling and zero-footprint data protocols.",
+			tags: ["JavaScript", "HIPAA", "OOD", "Enterprise"],
+			link: "https://dte-84.github.io/DTE-Solutions-Hub/case-study-pcsp.html",
+			video: "/DTE-E-Portfolio/assets/PCSP.mp4",
 		}
 	];
 
