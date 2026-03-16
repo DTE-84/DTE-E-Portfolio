@@ -56,8 +56,8 @@ export default function CaseStudyPCSP() {
   const impactRows = [
     {
       metric: "Audit Rejection",
-      before: "High Risk (Passive Language)",
-      after: "0% Rejected",
+      before: "Medium Risk",
+      after: "Low Risk",
     },
     {
       metric: "Drafting Time",

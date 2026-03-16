@@ -22,35 +22,35 @@ A hybrid of **Advanced Software Engineering** and **Strategic Communication**. L
 
 ---
 
-## HIGH-PERFORMANCE ENGINEERING INITIATIVES
+## HIGH-PERFORMANCE ENGINEERING & DATA ANALYTICS INITIATIVES
 
-### Founder & Principal Consultant • DTE Solutions LLC | 2025 – Present
+### Founder & Senior BI Consultant • DTE Solutions LLC | 2025 – Present
 
-_Strategic Technical Orchestration & Full-Stack Solutions for High-Stakes Environments._
+_Strategic Technical Orchestration & Data-Driven Intelligence for High-Stakes Environments._
 **Tech Stack:** TypeScript, Next.js, Node.js, C#, .NET Core, AWS, Docker
 
-- **Independent Consultancy:** Established a freelance engine, architecting specialized analytical tools using **Next.js** for frontends and **Node.js** for backend data orchestration.
-- **Architectural Strategy:** Designed a high-performance **API Integration Roadmap** for "SantiCars," navigating complex data-sensitivity constraints to architect a secure inventory management interface.
-- **Full-Lifecycle Ownership:** Orchestrated the entire product trajectory, utilizing **Docker** for containerization and **AWS (EC2/S3)** to host production-grade deployments with **GitHub Actions** for CI/CD.
+- **Business Intelligence Strategy:** Established a specialized analytical engine, architecting high-fidelity data orchestration tools using **Next.js** and **Node.js** to transform raw operational metrics into actionable executive insights.
+- **Architectural Data Integrity:** Designed a secure **API Integration Roadmap** for "SantiCars," navigating complex data-sensitivity constraints to architect a secure inventory management interface with rigorous validation protocols.
+- **Full-Lifecycle Infrastructure:** Orchestrated the entire product trajectory, utilizing **Docker** for containerization and **AWS (EC2/S3)** to host production-grade deployments with **GitHub Actions** for CI/CD, maintaining 99.9% uptime for analytical pipelines.
 
 ### Founder & Principal Engineer • NestLegacy | 2026
 
 _Digital Trust Layer & Wealth Acquisition Engine for the $84 Trillion Transfer._
 **Tech Stack:** Next.js, TypeScript, GPT-4o, Tailwind CSS, Vercel
 
-- **Behavioral Lead Intelligence:** Engineered a lead qualification engine utilizing **GPT-4o** via the **OpenAI API**, integrated into a **Next.js** application to provide AI-driven behavioral modeling.
-- **Projective Analytics:** Architected interactive longevity and tax-exposure systems using **TypeScript** and **Tailwind CSS**, delivering immediate mathematical value through precise UI components.
-- **Enterprise Nexus:** Developed a modular hub-style architecture in **Next.js**, deployed on **Vercel** to ensure global scalability and clear data integrity across corporate branches.
+- **Behavioral Lead Intelligence:** Engineered a lead qualification engine utilizing **GPT-4o** via the **OpenAI API**, integrated into a **Next.js** application to perform automated **Categorical to Ordinal** mapping of prospective client behaviors.
+- **Projective Wealth Analytics:** Architected interactive longevity and tax-exposure systems using **TypeScript** and **Tailwind CSS**, delivering immediate mathematical value through precise, data-integrity-driven UI components.
+- **Enterprise Nexus:** Developed a modular hub-style architecture in **Next.js**, deployed on **Vercel** to ensure global scalability and clear data lineage across complex organizational structures.
 
-### Lead Full-Stack Developer • Pulse (The Behavioral Finance Conscience) | 2026
+### Senior Data Analyst & Lead Developer • Pulse (The Behavioral Finance Conscience) | 2026
 
-_Production-grade behavioral finance system designed to correlate financial velocity with user psychology._
+_Production-grade behavioral finance system designed to analyze Correlation vs. Causation between financial velocity and user psychology._
 **Tech Stack:** React 19, FastAPI (Python), PostgreSQL, MongoDB, AWS S3, Recharts
 
-- **Behavioral Intelligence:** Engineered "Nova," an evolving AI consciousness using **GPT-4o** and **Python**; implemented "Behavioral Mirroring" to correlate **PostgreSQL (SQL Schema Design)** and **MongoDB** financial data with user-logged stress indices.
-- **Data Integrity:** Designed relational database schemas in **PostgreSQL** to maintain strict ACID compliance for financial transactional data, ensuring detailed mirroring of user behavior.
-- **High-Velocity Infrastructure:** Architected a multi-tier system utilizing **React 19** and a **FastAPI (Python)** asynchronous backend, achieving sub-millisecond data delivery to **Recharts** visualization components.
-- **Strategic Security:** Integrated an **AWS S3** Receipt system utilizing encrypted pre-signed URL protocols in **TypeScript** to ensure audit-ready data persistence and uncompromising user privacy.
+- **Behavioral Data Orchestration:** Engineered "Nova," an evolving AI consciousness; implemented advanced **Correlation vs. Causation** analysis between **PostgreSQL** transactional data and user-logged stress indices.
+- **Advanced Data Transformation:** Utilized **Grouped Imputation** and **Categorical to Ordinal** scaling to normalize qualitative user sentiment data, allowing for precise visualization of financial behavior trends in **Recharts**.
+- **Data Integrity & Compliance:** Designed relational database schemas in **PostgreSQL** to maintain strict ACID compliance, ensuring that every byte of financial data mirrors the user’s psychological profile with absolute precision.
+- **Strategic Persistence:** Integrated an **AWS S3** receipt system utilizing encrypted pre-signed URL protocols to ensure audit-ready data persistence and uncompromising user privacy in high-compliance environments.
 
 ### Lead Software Engineer • Marion County DDSD (Missouri DMH) | 2026
 
@@ -58,17 +58,17 @@ _PCSP Assistant Pro — HIPAA-compliant clinical documentation engine for state 
 **Tech Stack:** Vanilla JavaScript, OOD, CSS3, HTML5, Java
 
 - **Strategic Communications Bridge:** Developed an "Intelligent Phrasing Engine" in **Vanilla JavaScript**, applying **Object-Oriented Design (OOD)** to translate complex clinical requirements into intuitive **HTML5/CSS3** UI patterns.
-- **Workflow Optimization:** Reduced documentation revision cycles by architecting a custom state management system in **JavaScript** and utilizing **Java** for core logic to ensure 100% adherence to Missouri DMH state audit requirements.
-- **Zero-Footprint Security:** Engineered an **in-memory processing architecture** in the browser to satisfy stringent HIPAA security standards without compromising system speed or data integrity.
+- **Workflow Optimization:** Reduced documentation revision cycles by architecting a custom state management system in **JavaScript**, ensuring 100% **Data Integrity** and adherence to Missouri DMH state audit requirements.
+- **Zero-Footprint Security:** Engineered an **in-memory processing architecture** in the browser to satisfy stringent HIPAA security standards without compromising system speed or analytical accuracy.
 
-### Full-Stack Engineer • Caddie & Fluff Ecosystem | 2025 – 2026
+### Full-Stack BI Engineer • Caddie & Fluff Ecosystem | 2025 – 2026
 
-_Biomechanical Intelligence & High-Engagement Performance Tracking._
+_Biomechanical Intelligence & High-Engagement Performance Analytics._
 **Tech Stack:** React, TypeScript, Node.js, MongoDB, Socket.io, Firebase, Computer Vision (Python)
 
-- **Biomechanical Swing Analysis:** Engineered a computer vision engine using **Python** and **OpenCV** to analyze skeletal alignment, streaming real-time kinematic feedback to a **React** mobile interface.
-- **Tactical Caddie Logic:** Developed a "Live Skins" synchronization engine using **Node.js**, **Socket.io**, and **MongoDB** to provide real-time competitive precision for multiple users on the course.
-- **Cloud Integration:** Leveraged **Firebase (Auth & Firestore)** as the primary real-time database to manage user state, GPS coordinates, and tactical course advice synchronization.
+- **Biomechanical Telemetry Analysis:** Engineered a computer vision engine using **Python** and **OpenCV** to analyze skeletal alignment, performing real-time **Categorical to Ordinal** scoring of swing kinematics.
+- **Tactical Data Synchronization:** Developed a "Live Skins" synchronization engine using **Node.js**, **Socket.io**, and **MongoDB** to provide real-time competitive precision and unified data views for multiple users.
+- **Cloud Analytics Integration:** Leveraged **Firebase (Auth & Firestore)** as the primary real-time database to manage complex user states and GPS telemetry, maintaining high data velocity and precision on the green.
 
 ---
 

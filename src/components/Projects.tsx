@@ -77,6 +77,19 @@ const Projects: React.FC = () => {
 
         const deployments: Project[] = [
                 {
+                        id: "SET_LOGIC",
+                        title: "SetLogic",
+                        category: "Biomechanic Intelligence",
+                        year: "2026",
+                        description:
+                                "AI-driven physical performance engine optimizing biomechanic trajectory through iterative coaching and metabolic data correlation.",
+                        tags: ["React 19", "Claude AI", "Biomechanics"],
+                        image: "/DTE-E-Portfolio/assets/setlogic-logo.png",
+                        video: "/DTE-E-Portfolio/assets/SetLogic.mp4",
+                        link: "https://set-logic.vercel.app/",
+                        featured: true,
+                },
+                {
                         id: "NEST_LEGACY",
                         title: "NestLegacy",
                         category: "Enterprise Wealth Technology",
