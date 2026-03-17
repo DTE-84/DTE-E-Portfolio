@@ -941,7 +941,7 @@ export default function CaseStudyPCSP() {
               </p>
               <div className="flex justify-center gap-8 flex-wrap">
                 <a
-                  href="https://pcsp-casestudy-6bcf2d.gitlab.io/"
+                  href="https://dte-84.github.io/PCSP-assistant-PRO/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-4 bg-[#00ffcc] text-[#0a0a0c] font-bold uppercase tracking-widest text-xs rounded hover:scale-105 transition-all"

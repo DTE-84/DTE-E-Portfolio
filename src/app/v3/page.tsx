@@ -192,7 +192,7 @@ const Work = () => {
 			description:
 				"HIPAA-compliant clinical documentation engine for state government audits. Designed to streamline PCSP workflows through intelligent narrative modeling and zero-footprint data protocols.",
 			tags: ["JavaScript", "HIPAA", "OOD", "Enterprise"],
-			link: "https://dte-84.github.io/DTE-Solutions-Hub/case-study-pcsp.html",
+			link: "https://dte-solutions.icu/pcsp-breakdown.html",
 			video: "/DTE-E-Portfolio/assets/PCSP.mp4",
 		},
 	];
