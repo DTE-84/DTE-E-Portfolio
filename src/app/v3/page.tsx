@@ -46,14 +46,14 @@ const Hero = () => {
 		<section className='pt-32 pb-20 px-6 md:px-12 max-w-7xl mx-auto'>
 			<div className='flex flex-col gap-6'>
 				<span className='text-accent font-mono text-xs tracking-[0.5em] uppercase font-bold'>
-					Principal Engineer // STL
+					Data Analyst // Full-Stack Developer
 				</span>
 				<h1 className='text-6xl md:text-9xl font-black tracking-tighter leading-none uppercase'>
 					Drew T<br />
 					<span className='text-white/20 italic'>Ernst.</span>
 				</h1>
 				<div className='max-w-2xl mt-8'>
-					<RevealText text='Engineering highly analytical systems where behavioral intelligence meets pure data integrity. Specializing in high-stakes clinical and financial infrastructure.' />
+					<RevealText text='I build useful software for real people — especially workflow tools, behavioral products, and data-driven web apps that reduce friction and solve real problems.' />
 				</div>
 			</div>
 		</section>
@@ -114,86 +114,81 @@ const ProjectCard = ({ project }: { project: any }) => {
 const Work = () => {
 	const projects = [
 		{
-			id: "SetLogic",
-			title: "SetLogic - Physical Performance Engine",
-			category: "DTE Solutions",
+			id: "PCSP",
+			title: "PCSP Assistant Pro",
+			category: "Case Study",
 			year: "2026",
 			description:
-				"AI-driven physical performance engine optimizing biomechanic trajectory through iterative coaching and metabolic data correlation.",
-			tags: [
-				"React 19",
-				"Nutrition and Exercise",
-				"Lead Intelligence",
-				"Claude AI",
-			],
+				"HIPAA-sensitive clinical documentation tool built to streamline Missouri PCSP drafting, improve first-pass compliance quality, and reduce workflow friction for frontline staff.",
+			tags: ["JavaScript", "HIPAA", "Workflow Design", "Compliance"],
+			link: "/case-study-pcsp",
+			video: "/assets/PCSP.mp4",
+		},
+		{
+			id: "Quarterly",
+			title: "Quarterly Pro",
+			category: "Case Study",
+			year: "2026",
+			description:
+				"High-fidelity audit resilience engine for Missouri DMH/MMAC reporting. Features deterministic validation against the April 2026 EVV Hard Launch and Oct 2025 HRST mandates.",
+			tags: ["React", "Systems Engineering", "Audit Resilience", "Data Integrity"],
+			link: "/case-study-quarterly",
+			video: "/assets/PCSP.mp4",
+		},
+		{
+			id: "Pulse",
+			title: "Pulse - Behavioral Finance App",
+			category: "Analytics Product",
+			year: "2026",
+			description:
+				"Behavioral finance application built to help users recognize spending triggers, understand habit patterns, and track progress toward long-term financial goals.",
+			tags: ["Python", "PostgreSQL", "Behavioral Analytics", "ETL"],
+			link: "https://dte-solutions.icu/pulse-breakdown.html",
+			video: "/DTE-E-Portfolio/assets/Pulse.mp4",
+		},
+		{
+			id: "SetLogic",
+			title: "SetLogic - AI Fitness Planning App",
+			category: "Health & Fitness",
+			year: "2026",
+			description:
+				"Mobile-first fitness app designed to generate personalized workout plans, meal guidance, and progress support based on user goals and preferences.",
+			tags: ["React", "Firebase", "Fitness Planning", "AI Coaching"],
 			link: "https://dte-84.github.io/SetLogic/",
 			video: "/DTE-E-Portfolio/assets/SetLogic.mp4",
 		},
 		{
 			id: "NestLegacy",
-			title: "NestLegacy - Wealth Transfer Engine",
-			category: "Enterprise Fintech",
+			title: "NestLegacy - Lead Intelligence Platform",
+			category: "Fintech Concept",
 			year: "2026",
 			description:
-				"Digital trust layer for the $84 trillion wealth transfer. AI-driven lead intelligence bridging inheritors to fiduciary experts through behavioral financial modeling.",
-			tags: ["React 19", "Behavioral Finance", "Lead Intelligence", "Nova AI"],
+				"Behavior-driven lead intelligence concept designed to help financial professionals better understand, qualify, and engage high-value prospects.",
+			tags: ["React", "Fintech", "Lead Qualification", "Product Strategy"],
 			link: "https://dte-84.github.io/NestLegacy/",
 			video: "/DTE-E-Portfolio/assets/NestLegacy.mp4",
 		},
 		{
-			id: "Pulse",
-			title: "Pulse - Behavioral Intelligence Platform",
-			category: "Behavioral Fintech",
-			year: "2026",
-			description:
-				"High-fidelity financial dashboard utilizing behavioral psychology to detect spending rhythms and emotional triggers. Engineered with a FastAPI asynchronous backend and Nova AI integration.",
-			tags: ["React 19", "FastAPI", "MongoDB", "Behavioral AI"],
-			link: "https://dte-solutions.icu/pulse-breakdown.html",
-			video: "/DTE-E-Portfolio/assets/Pulse.mp4",
-		},
-		{
 			id: "Fluff",
-			title: "Fluff - IoT Telemetry Engine",
-			category: "Performance Analytics",
+			title: "Fluff - Golf Performance Analysis Platform",
+			category: "Sports Tech",
 			year: "2026",
 			description:
-				"Multi-source telemetry suite orchestrating real-time GPS coordinates and historical player databases. Features an audible AI assistant for PGA-grade performance analysis.",
-			tags: ["React 19", "Geospatial", "IoT Sync", "Biometrics"],
+				"Sports performance tool combining GPS, round analysis, and coaching support to help golfers review play and improve results.",
+			tags: ["React", "Sports Analytics", "GPS", "Coaching"],
 			link: "https://dte-84.github.io/Fluff/",
 			video: "/DTE-E-Portfolio/assets/Fluff.mp4",
 		},
 		{
-			id: "SIKNIGHT",
-			title: "SiKnight Game Hub",
-			category: "Interactive Media",
-			year: "2026",
-			description:
-				"High-engagement gaming portal featuring an interactive engine, real-time leaderboard, and virtual currency.",
-			tags: ["React", "Interactive", "Game Design"],
-			link: "https://dte-84.github.io/SiKnight/",
-			video: "/DTE-E-Portfolio/assets/siknight.mp4",
-		},
-		{
 			id: "TONYS",
 			title: "Landscaping Logic",
-			category: "Commercial UI",
+			category: "Business Website",
 			year: "2026",
 			description:
-				"Service-oriented architecture featuring a custom interactive engine for visual data comparison.",
-			tags: ["Vanilla JS", "UI/UX", "GSAP"],
+				"Service business website focused on clear presentation, responsive design, and practical customer-facing usability.",
+			tags: ["Vanilla JS", "Responsive Design", "UI/UX"],
 			link: "https://tonyslandscapingllc.com",
 			video: "/DTE-E-Portfolio/assets/TonysLandscaping.mp4",
-		},
-		{
-			id: "PCSP",
-			title: "PCSP Assistant Pro",
-			category: "Clinical Documentation",
-			year: "2026",
-			description:
-				"HIPAA-compliant clinical documentation engine for state government audits. Designed to streamline PCSP workflows through intelligent narrative modeling and zero-footprint data protocols.",
-			tags: ["JavaScript", "HIPAA", "OOD", "Enterprise"],
-			link: "https://dte-solutions.icu/pcsp-breakdown.html",
-			video: "/DTE-E-Portfolio/assets/PCSP.mp4",
 		},
 	];
 
@@ -223,17 +218,13 @@ const About = () => {
 			<div className='grid md:grid-cols-2 gap-16'>
 				<div className='flex flex-col gap-8'>
 					<h2 className='text-4xl font-black uppercase tracking-tighter'>
-						The <span className='text-accent italic'>Philosophy.</span>
+						How I <span className='text-accent italic'>Build.</span>
 					</h2>
 					<p className='text-lg text-zinc-400 leading-relaxed'>
-						I bridge the gap between high-level engineering and strategic
-						marketing. Every line of code is a communicative act; every UI
-						pattern is a behavioral prompt.
+						I like building useful software that makes difficult work easier, turns messy problems into manageable systems, and helps people get better outcomes.
 					</p>
 					<p className='text-zinc-500 leading-relaxed'>
-						With a background in Public Relations and Marketing, I approach
-						software not just as a technical challenge, but as a mechanism for
-						trust acquisition and data integrity.
+						My background in marketing and communication helps me shape software around user behavior, business goals, and cleaner delivery for real clients.
 					</p>
 				</div>
 				<div className='bg-white/5 border border-white/10 rounded-3xl p-8 grid sm:grid-cols-2 gap-8'>
@@ -246,7 +237,7 @@ const About = () => {
 						</div>
 						<div>
 							<h4 className='font-bold uppercase tracking-tight text-sm'>
-								Enterprise Scaling
+								Workflow Systems
 							</h4>
 							<p className='text-[10px] text-zinc-500 uppercase tracking-widest'>
 								Global Ready
@@ -262,7 +253,7 @@ const About = () => {
 						</div>
 						<div>
 							<h4 className='font-bold uppercase tracking-tight text-sm'>
-								HIPAA / Data Safety
+								Compliance-Aware Builds
 							</h4>
 							<p className='text-[10px] text-zinc-500 uppercase tracking-widest'>
 								Zero-Footprint
@@ -278,10 +269,10 @@ const About = () => {
 						</div>
 						<div>
 							<h4 className='font-bold uppercase tracking-tight text-sm'>
-								Behavioral AI
+								Behavioral Products
 							</h4>
 							<p className='text-[10px] text-zinc-500 uppercase tracking-widest'>
-								Predictive UX
+								Insight-driven product thinking
 							</p>
 						</div>
 					</div>
