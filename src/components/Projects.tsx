@@ -66,7 +66,7 @@ const Projects: React.FC = () => {
                 category: "Featured Case Study",
                 year: "2025",
                 description:
-                        "Clinical data validation engine synthesizing unstructured patient narratives with Missouri DMH/HCBS compliance frameworks; features zero-footprint PHI security and automated documentation logic.",
+                        "Clinical documentation workflow tool built for HIPAA-sensitive use cases, helping teams reduce manual revision work and improve consistency.",
                 tags: ["Next.js", "Compliance Logic", "HIPAA", "Zero-Footprint"],
                 image: "/DTE-E-Portfolio/assets/pcsp1.png",
                 video: "/DTE-E-Portfolio/assets/CaseStudy-PCSP-1771755500766.mp4",
@@ -79,10 +79,10 @@ const Projects: React.FC = () => {
                 {
                         id: "SET_LOGIC",
                         title: "SetLogic",
-                        category: "Biomechanic Intelligence",
+                        category: "AI Fitness Coaching",
                         year: "2026",
                         description:
-                                "AI-driven physical performance engine optimizing biomechanic trajectory through iterative coaching and metabolic data correlation.",
+                                "AI-powered fitness coaching platform with guided training flows, performance tracking, and interactive user feedback.",
                         tags: ["React 19", "Claude AI", "Biomechanics"],
                         image: "/DTE-E-Portfolio/assets/setlogic-logo.png",
                         video: "/DTE-E-Portfolio/assets/SetLogic.mp4",
@@ -92,10 +92,10 @@ const Projects: React.FC = () => {
                 {
                         id: "NEST_LEGACY",
                         title: "NestLegacy",
-                        category: "Enterprise Wealth Technology",
+                        category: "Lead Intelligence Platform",
                         year: "2026",
                         description:
-                                "AI-driven lead intelligence engine for the $84 trillion wealth transfer. Orchestrates behavioral financial modeling to bridge the trust gap between inheritors and fiduciary experts.",
+                                "Lead intelligence platform designed to help financial professionals qualify, understand, and engage high-value prospects more effectively.",
                         tags: ["React 19", "Behavioral Finance", "Lead Intelligence"],
                         image: "/DTE-E-Portfolio/assets/novaui.png",
                         video: "/DTE-E-Portfolio/assets/NestLegacy.mp4", 
@@ -105,10 +105,10 @@ const Projects: React.FC = () => {
                 {
                         id: "PULSE_FINANCE",
                         title: "Pulse",
-                        category: "Behavioral Intelligence",
+                        category: "AI Finance Dashboard",
                         year: "2026",
                         description:
-                                "Integrated financial data ecosystem (Plaid API, AWS S3 unstructured metadata, and MongoDB) utilizing a Python/FastAPI backend to deliver real-time behavioral insights and multi-source wealth forecasting.",
+                                "AI-assisted finance dashboard built with data integrations and a Python backend to deliver real-time insights, reporting, and smarter user decision support.",
                         tags: ["Python FastAPI", "Data Science", "AWS"],
                         image: "/DTE-E-Portfolio/assets/novaui.png",
                         video: "/DTE-E-Portfolio/assets/Pulse.mp4",
@@ -118,10 +118,10 @@ const Projects: React.FC = () => {
                 {
                         id: "CADDIE_FLUFF",
                         title: "Fluff",
-                        category: "IoT Telemetry Engine",
+                        category: "Golf Performance Analysis",
                         year: "2026",
                         description:
-                                "Multi-source telemetry engine orchestrating real-time GPS coordinates, historical player databases, and audible distance-to-pin assistant for tour-grade performance analysis.",
+                                "Golf performance tool combining telemetry, GPS data, and coaching support to help players analyze rounds and improve results.",
                         tags: ["React 19", "Geospatial", "IoT"],
                         image: "/DTE-E-Portfolio/assets/fluff/FLUFF-GPS.png",
                         video: "/DTE-E-Portfolio/assets/Fluff.mp4",

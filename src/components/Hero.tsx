@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
 					className='typewriter text-lg md:text-xl font-mono uppercase tracking-[0.3em]'
 					style={{ color: "var(--theme-accent)" }}>
 					<br />
-					Data Analyst | Software Engineer{" "}
+					Full-Stack Developer | AI App Builder{" "}
 					<span
 						className='text-offset'
 						style={{
@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
 							textShadow: "0 0 10px rgba(var(--theme-offset-rgb), 0.3)",
 						}}></span>
 					<br />
-					Engineering Performance through Data Integrity
+					Building practical web apps, tools, and AI-driven products
 				</p>
 
 				<div className='mt-20 flex flex-col items-center gap-12 w-full'>

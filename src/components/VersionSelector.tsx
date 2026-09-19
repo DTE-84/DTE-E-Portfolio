@@ -53,9 +53,9 @@ export default function VersionSelector({ forcedOpen = false, onClose, isOpen = 
       )}
 
       <div className="text-center mb-16">
-        <div className="text-accent font-mono text-[10px] uppercase tracking-[0.5em] mb-4 font-black">Gateway // DTE Solutions</div>
+        <div className="text-accent font-mono text-[10px] uppercase tracking-[0.5em] mb-4 font-black">DTE // Choose Your Starting Point</div>
         <h1 className="text-5xl md:text-8xl font-black text-white tracking-tighter mb-4 uppercase leading-none">
-          Select <br/><span className="text-white/20">Solutions</span>
+          Start <br/><span className="text-white/20">Here</span>
         </h1>
       </div>
 
@@ -66,13 +66,13 @@ export default function VersionSelector({ forcedOpen = false, onClose, isOpen = 
           onClick={handleSelect}
           className="group flex-1 p-10 bg-zinc-900/50 border border-[#00ffcc]/20 hover:border-[#00ffcc] transition-all duration-500 relative overflow-hidden rounded-3xl"
         >
-          <div className="absolute top-6 left-6 text-[10px] font-bold uppercase tracking-widest text-zinc-600">Protocol V3.0 (High-Fidelity)</div>
+          <div className="absolute top-6 left-6 text-[10px] font-bold uppercase tracking-widest text-zinc-600">Portfolio Overview</div>
           <div className="mt-16 text-center">
             <h2 className="text-4xl font-black tracking-tighter text-white mb-2 uppercase group-hover:text-[#00ffcc] transition-colors">
               Portfolio<span className="text-[#00ffcc]">.</span>
             </h2>
             <p className="text-zinc-500 text-sm font-medium leading-relaxed">
-              Immersive personal workspace showcasing full-stack engineering and public relations background.
+              Broader portfolio experience with visual style, project variety, and supporting background.
             </p>
           </div>
         </Link>
@@ -83,7 +83,7 @@ export default function VersionSelector({ forcedOpen = false, onClose, isOpen = 
           onClick={handleSelect}
           className="group flex-1 p-10 bg-zinc-900 border-2 border-white/10 hover:border-white transition-all duration-500 relative overflow-hidden rounded-[40px] shadow-2xl flex flex-col items-center justify-center"
         >
-          <div className="absolute top-6 left-6 text-[10px] font-black uppercase tracking-widest text-white/40 animate-pulse">Live Solutions</div>
+          <div className="absolute top-6 left-6 text-[10px] font-black uppercase tracking-widest text-white/40 animate-pulse">Company Hub</div>
           <div className="mb-6 relative w-20 h-20 group-hover:scale-110 transition-transform duration-500"></div>
             
           <div className="text-center">
@@ -91,7 +91,7 @@ export default function VersionSelector({ forcedOpen = false, onClose, isOpen = 
               Solutions Hub<span>.</span>
             </h2>
             <p className="text-zinc-400 text-sm font-medium leading-relaxed">
-              Sophisticated applications solving real-world problems. Explore **PULSE** and **FLUFF** engineering environments.
+              Explore product concepts, case studies, and company-level project framing across multiple builds.
             </p>
           </div>
         </Link>
@@ -102,13 +102,13 @@ export default function VersionSelector({ forcedOpen = false, onClose, isOpen = 
           onClick={handleSelect}
           className="group flex-1 p-10 bg-zinc-900/50 border border-[#00ffff]/20 hover:border-[#00ffff] transition-all duration-500 relative overflow-hidden rounded-3xl"
         >
-          <div className="absolute top-6 left-6 text-[10px] font-bold uppercase tracking-widest text-zinc-600">Protocol V3.0 (Minimalist)</div>
+          <div className="absolute top-6 left-6 text-[10px] font-bold uppercase tracking-widest text-zinc-600">Recommended</div>
           <div className="mt-16 text-center">
             <h2 className="text-4xl font-black tracking-tighter text-white mb-2 uppercase group-hover:text-[#00ffff] transition-colors">
-              Minimal<span className="text-[#00ffff]">.</span>
+              Portfolio<span className="text-[#00ffff]">.</span>
             </h2>
             <p className="text-zinc-500 text-sm font-medium leading-relaxed">
-              Refined, content-focused architecture for rapid behavioral analysis review.
+              Cleanest starting point for recruiters, clients, and hiring teams. Focused on your strongest work and clearest story.
             </p>
           </div>
         </Link>
@@ -120,6 +120,8 @@ export default function VersionSelector({ forcedOpen = false, onClose, isOpen = 
     </div>
   );
 }
+
+
 
 
 

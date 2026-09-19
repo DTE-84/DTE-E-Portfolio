@@ -42,42 +42,36 @@ export default function CaseStudyPCSP() {
   ];
 
   const domains = [
-    { num: "01", label: "Demographics & Legal" },
-    { num: "02", label: "Communication Profile" },
-    { num: "03", label: "Likes & Dislikes" },
-    { num: "04", label: "Important People" },
-    { num: "05", label: "Vision for a Good Life" },
-    { num: "06", label: "Health, Safety & Risk" },
-    { num: "07", label: "Legal Rights & Satisfaction" },
-    { num: "08", label: "Contributors & Admin" },
-    { num: "09", label: "Measurable Outcomes" },
+    { num: "01", label: "Demographics" },
+    { num: "02", label: "Preferences" },
+    { num: "03", label: "Dislikes" },
+    { num: "04", label: "People / Pets" },
+    { num: "05", label: "Hopes / Concerns" },
+    { num: "06", label: "Communication" },
+    { num: "07", label: "Programs" },
+    { num: "08", label: "Health / Risk" },
+    { num: "09", label: "Community Support" },
+    { num: "10", label: "Ways to Support" },
+    { num: "11", label: "Strengths" },
+    { num: "12", label: "Transition" },
+    { num: "13", label: "Behavioral" },
+    { num: "14", label: "Supervision" },
+    { num: "15", label: "Past / Current Goals" },
+    { num: "16", label: "Action Plan" },
+    { num: "17", label: "Comments" },
+    { num: "18", label: "Amendment Log" },
   ];
 
   const impactRows = [
-    {
-      metric: "Audit Rejection",
-      before: "Medium Risk",
-      after: "Low Risk",
-    },
     {
       metric: "Drafting Time",
       before: "~15–20 Min / Goal",
       after: "< 2 Minutes",
     },
     {
-      metric: "Audit Compliance",
-      before: "Inconsistent Active Phrasing",
-      after: "100% Active Phrasing",
-    },
-    {
       metric: "IT Overhead",
       before: "Complex Security Requirements",
       after: "Zero (Browser Only)",
-    },
-    {
-      metric: "Revision Cycles",
-      before: "Frequent Rejections",
-      after: "First-Pass Approval",
     },
     {
       metric: "Communication Docs",
@@ -87,7 +81,12 @@ export default function CaseStudyPCSP() {
     {
       metric: "Plan Portability",
       before: "Locked to One Machine",
-      after: ".pcsp File / PDF",
+      after: "Encrypted AES-GCM (.pcsp)",
+    },
+    {
+      metric: "Data Confidentiality",
+      before: "Readable Plaintext",
+      after: "Cryptographically Sealed",
     },
     {
       metric: "Person-Centered Data",
@@ -121,7 +120,7 @@ export default function CaseStudyPCSP() {
     {
       icon: "solar:widget-add-linear",
       title: "Modular Builder",
-      body: "A dropdown-driven building block approach converts casual goal language into standardized SMART goals instantly. Each of the nine PCSP sections is self-contained and collapses cleanly for focused drafting.",
+      body: "A dropdown-driven building block approach converts casual goal language into standardized SMART goals instantly. Each of the 18 PCSP sections is self-contained and collapses cleanly for focused drafting.",
     },
     {
       icon: "solar:library-linear",
@@ -142,7 +141,7 @@ export default function CaseStudyPCSP() {
     {
       icon: "solar:diskette-linear",
       title: "Portable File System",
-      body: "Plans save as .pcsp files locally, reload on demand with full fidelity, print as clean PDFs, or persist as browser drafts — zero cloud dependency, zero IT involvement.",
+      body: "Plans save as AES-GCM encrypted .pcsp files locally, reload on demand with full fidelity, print as clean PDFs, or persist as browser drafts — zero cloud dependency, zero IT involvement.",
     },
     {
       icon: "solar:shield-check-linear",
@@ -169,6 +168,26 @@ export default function CaseStudyPCSP() {
       icon: "solar:target-linear",
       title: "Multi-Goal Outcomes Engine",
       body: "Section 9 now supports unlimited measurable outcome goals per plan — each with its own domain, support method, frequency, responsible provider, and start/end dates. All goals serialize into the .pcsp export and restore with full fidelity.",
+    },
+    {
+      icon: "solar:clipboard-list-linear",
+      title: "18-Domain Face Sheet",
+      body: "A dedicated cover sheet captures individual photo, full legal name, DMH ID, funding type, and PCSP meeting/implementation dates ahead of the 18-domain workspace — giving coordinators a complete plan header before drafting begins.",
+    },
+    {
+      icon: "solar:document-add-linear",
+      title: "Amendment Log",
+      body: "A standalone Section 18 records post-approval changes — moves, service changes, new providers — without reopening or re-editing the sections above. Each entry tags the domains it affects, surfaces an Amended badge in navigation, and prints as a dated addendum.",
+    },
+    {
+      icon: "solar:map-point-favourite-linear",
+      title: "Marion County Resource Directory",
+      body: "A built-in, categorized directory — local providers, domestic violence & safety, employment/vocational & benefits, transportation, medical & health care, and developmental disability & independent living — puts referral contacts one click away without leaving the plan.",
+    },
+    {
+      icon: "solar:gallery-linear",
+      title: "Branded Document Preview",
+      body: "The output pipeline now renders a Marion County SDD letterhead cover page with a HIPAA Protected photo placeholder and plan summary block ahead of the full narrative — a submission-ready document, not just a form dump.",
     },
   ];
 
@@ -212,12 +231,22 @@ export default function CaseStudyPCSP() {
     {
       num: "08",
       title: "HIPAA Compliance Hardening (v2.0)",
-      body: "Added a 4-second debounced auto-save with 48-hour restore prompt, 30-minute HIPAA idle session timeout, and 30-day automatic PHI draft expiry with in-panel expiry warnings. All dynamic innerHTML rendering was secured with an HTML escape helper to prevent injection via user-supplied input. The print stylesheet was updated to stamp a HIPAA confidentiality footer on every printed page.",
+      body: "Added a 4-second debounced auto-save with 48-hour restore prompt, 30-minute HIPAA idle session timeout, and 30-day automatic PHI draft expiry with in-panel expiry warnings. All dynamic innerHTML rendering was secured with an HTML escape helper to prevent injection via user-supplied input. The print stylesheet was updated to stamp a HIPAA confidentiality footer on every printed page. The .pcsp export format was upgraded from plaintext JSON to AES-GCM encrypted output, so a saved plan is cryptographically sealed at rest.",
     },
     {
       num: "09",
       title: "Multi-Goal Outcomes Engine (v2.0)",
       body: "Redesigned Section 9 from a single-goal builder into an unlimited multi-goal system. Each goal card is self-contained — domain, active verb, goal template, frequency, responsible provider, and date range — and can be added, removed, or reordered independently. All goals serialize into the .pcsp export and generate a numbered, audit-ready narrative block.",
+    },
+    {
+      num: "10",
+      title: "18-Domain Expansion",
+      body: "Grew the workspace from 9 consolidated domains to the full 18-section Missouri PCSP template — Preferences, Dislikes, People/Pets, Hopes/Concerns, Programs, Community Support, Ways to Support, Strengths, Transition, Behavioral, Supervision, Past/Current Goals, and Action Plan now each get a dedicated, self-contained section behind a new Face Sheet cover that captures photo, DMH ID, and funding type up front.",
+    },
+    {
+      num: "11",
+      title: "Amendment Log & Resource Directory",
+      body: "Added Section 18 as a standalone amendment tracker — logging post-approval changes without reopening prior sections, tagging affected domains, and printing as a dated addendum. Paired it with a built-in Marion County resource directory covering local providers, safety, employment, transportation, medical, and independent-living contacts, plus a Light/Dark theme toggle and a branded letterhead cover page for the printed and previewed output.",
     },
   ];
 
@@ -377,7 +406,7 @@ export default function CaseStudyPCSP() {
                 </p>
               </div>
               <p className="text-base text-white/70 leading-relaxed">
-                Each Person Centered Service Plan required documenting nine clinical domains with precision. Missouri state auditors require specific active language structures —{" "}
+                Each Person Centered Service Plan required documenting eighteen clinical domains with precision. Missouri state auditors require specific active language structures —{" "}
                 <em className="text-[#00ffcc]">
                   &quot;Staff will provide instructional support to learn how to use the AAC device&quot;
                 </em>{" "}
@@ -470,18 +499,19 @@ export default function CaseStudyPCSP() {
                   servers. No POST requests. No IT tickets. No licensing cost.
                 </p>
                 <p className="text-base text-white/70 leading-relaxed">
-                  The interface covers all nine PCSP domains in a single unified
-                  workspace, from demographics to measurable outcomes — with a
-                  clinical word bank, a dynamic communication chart, an
-                  unlimited important-people roster, and a multi-goal outcomes
-                  engine baked directly into the logic.
+                  The interface covers a Face Sheet cover plus all 18 PCSP
+                  domains in a single unified workspace, from demographics to
+                  the amendment log — with a clinical word bank, a dynamic
+                  communication chart, an unlimited important-people roster, a
+                  multi-goal outcomes engine, and a built-in local resource
+                  directory baked directly into the logic.
                 </p>
               </div>
 
               <div className="relative rounded-2xl overflow-hidden border border-[#00ffcc]/20 bg-[#00ffcc]/5 p-2 aspect-video">
                 <Image
                   src="/DTE-E-Portfolio/assets/pcsp2.png"
-                  alt="PCSP Workflow diagram"
+                  alt="Branded PCSP document preview with Marion County SDD letterhead"
                   fill
                   quality={80}
                   className="rounded-xl opacity-80 shadow-2xl w-full h-full object-cover hover:scale-105 transition-all duration-700 cursor-pointer"
@@ -520,6 +550,17 @@ export default function CaseStudyPCSP() {
                     </p>
                   </div>
                 ))}
+              </div>
+
+              <div className="relative rounded-2xl overflow-hidden border border-[#00ffcc]/20 bg-[#00ffcc]/5 p-2 flex justify-center">
+                <Image
+                  src="/DTE-E-Portfolio/assets/pcsp4.png"
+                  alt="Marion County resource directory panel"
+                  width={277}
+                  height={887}
+                  quality={80}
+                  className="rounded-xl opacity-80 shadow-2xl h-auto max-h-[520px] w-auto object-contain hover:scale-105 transition-all duration-700 cursor-pointer"
+                />
               </div>
             </div>
           </section>
@@ -585,7 +626,7 @@ export default function CaseStudyPCSP() {
               <div className="relative rounded-2xl overflow-hidden border border-[#00ffcc]/20 bg-[#00ffcc]/5 p-2 aspect-video">
                 <Image
                   src="/DTE-E-Portfolio/assets/pcsp3.png"
-                  alt="Clinical Logic Builder interface"
+                  alt="Amendment Log interface tracking post-approval plan changes"
                   fill
                   quality={80}
                   className="rounded-xl opacity-80 shadow-2xl w-full h-full object-cover hover:scale-105 transition-all duration-700 cursor-pointer"
@@ -595,7 +636,7 @@ export default function CaseStudyPCSP() {
               {/* 9 Domains */}
               <div className="p-6 rounded-xl border border-[#00ffcc]/20 bg-white/5">
                 <h4 className="text-[#00ffcc] text-[13px] font-black uppercase tracking-widest mb-6 font-orbitron">
-                  Full Section Architecture — 9 PCSP Domains
+                  Full Section Architecture — Face Sheet + 18 PCSP Domains
                 </h4>
                 <div className="grid md:grid-cols-3 gap-3">
                   {domains.map(({ num, label }) => (
@@ -714,7 +755,7 @@ export default function CaseStudyPCSP() {
                     },
                     {
                       title: ".pcsp Export",
-                      body: "When persistence is needed, the full plan state serializes to a local .pcsp file. The CM controls where it lives — agency drive, encrypted USB, or secure folder.",
+                      body: "When persistence is needed, the full plan state serializes to a local .pcsp file, encrypted with AES-GCM before it ever touches disk. The CM controls where it lives — agency drive, encrypted USB, or secure folder.",
                     },
                     {
                       title: "Browser Drafts",
