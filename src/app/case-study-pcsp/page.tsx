@@ -64,14 +64,29 @@ export default function CaseStudyPCSP() {
 
   const impactRows = [
     {
+      metric: "Audit Rejection",
+      before: "Medium Risk",
+      after: "Low Risk",
+    },
+    {
       metric: "Drafting Time",
       before: "~15–20 Min / Goal",
       after: "< 2 Minutes",
     },
     {
+      metric: "Audit Compliance",
+      before: "Inconsistent Active Phrasing",
+      after: "100% Active Phrasing",
+    },
+    {
       metric: "IT Overhead",
       before: "Complex Security Requirements",
       after: "Zero (Browser Only)",
+    },
+    {
+      metric: "Revision Cycles",
+      before: "Frequent Rejections",
+      after: "First-Pass Approval",
     },
     {
       metric: "Communication Docs",
