@@ -195,7 +195,7 @@ export default function CaseStudyPCSP() {
     {
       num: "01",
       title: "Regulatory Discovery",
-      body: 'Before writing a line of code, I conducted a full read of Missouri 9 CSR 45-3.010 and the "Good Life" Framework to map every required clinical trigger. The nine-domain PCSP structure, active treatment language requirements, and HCBS federal compliance rules all had to be baked into the logic before the UI could be designed. The first challenge was regulatory, not technical.',
+      body: 'Before writing a line of code, I conducted a full read of Missouri 9 CSR 45-3.010 and the "Good Life" Framework to map every required clinical trigger. The eighteen-domain PCSP structure, active treatment language requirements, and HCBS federal compliance rules all had to be baked into the logic before the UI could be designed. The first challenge was regulatory, not technical.',
     },
     {
       num: "02",
